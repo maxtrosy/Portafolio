@@ -1,0 +1,165 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url('./src/components/img/banner-bg.png'), 
+                linear-gradient(to right, rgba(0, 0, 0, 6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    animation: fadeInUp 1.5s ease-out; /* Animación de entrada para la sección */
+    position: relative;
+    background-blend-mode: overlay; /* Esto ayudará a mezclar la imagen con el gradiente */
+}
+
+/* Hero content (text and image container) */
+.hero-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+    position: relative; /* Necesario para posicionar la imagen dentro de este contenedor */
+}
+
+/* Sección de texto */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Centra el contenido horizontalmente a la izquierda */
+    max-width: 40%; /* Reducimos el ancho máximo del texto */
+    margin-right: 10%; /* Asegura un espacio a la derecha del texto */
+    margin-left: 10%; /* Mueve el texto hacia la izquierda */
+    animation: fadeInText 1.5s ease-out; /* Animación de entrada para el texto */
+}
+
+/* Animación de entrada para el texto */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Entrada desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeInText 1.5s ease-out; /* Animación de entrada para el título */
+}
+
+/* Descripción */
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: left; /* Cambiado a left para alinear el texto a la izquierda */
+    animation: fadeInText 1.5s ease-out; /* Animación de entrada para la descripción */
+}
+
+/* Botones */
+.hero-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8a2be2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    animation: fadeInText 1.5s ease-out; /* Animación de entrada para los botones */
+}
+
+.hero-button:hover {
+    background-color: #6a1b9a;
+}
+
+/* Iconos sociales */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra los iconos sociales */
+}
+
+.social-icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+    animation: fadeInText 1.5s ease-out; /* Animación de entrada para los iconos */
+}
+
+.social-icon:hover {
+    color: #8a2be2;
+}
+
+/* Estilo para la imagen con borde y gradiente */
+.hero-image {
+    position: absolute; /* La posicionamos de manera absoluta */
+    left: 75%; /* 75% del ancho de la pantalla */
+    top: 50%; /* Centrado verticalmente */
+    transform: translateX(-50%) translateY(-50%); /* Desplaza el centro de la imagen al 75% del ancho */
+    width: 25vw; /* Definir el ancho en unidades relativas a la ventana */
+    height: 25vw; /* Definir el alto en unidades relativas a la ventana */
+    background-image: none; /* Eliminar el gradiente */
+    display: flex;
+    justify-content: center;
+    opacity: 0.3; /* Establecer opacidad del 30% para la imagen */
+    animation: fadeInImage 1.5s ease-out forwards; /* Animación de entrada para la imagen */
+}
+
+/* Animación de entrada para la imagen */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale(0.8); /* Comienza pequeño */
+    }
+    to {
+        opacity: 0.9; /* Establece la opacidad al 30% */
+        transform: translateX(-50%) translateY(-50%) scale(1); /* Finaliza al tamaño original */
+    }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 90%; /* Ampliamos el ancho en dispositivos móviles */
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        position: static; /* Para que la imagen se muestre de manera estática en móviles */
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        border-radius: 20%; /* Bordes redondeados para la imagen */
+    }
+}
