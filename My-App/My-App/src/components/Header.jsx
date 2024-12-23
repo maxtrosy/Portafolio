@@ -48,9 +48,11 @@ const Header = () => {
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Contact Page</a></li>
         </ul>
       </nav>
       <div
