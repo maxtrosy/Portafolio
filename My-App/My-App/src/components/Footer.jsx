@@ -11,17 +11,7 @@ const Footer = () => {
         <p className="footer-text">
           © 2024 Dolisy Yurni - All Rights Reserved
         </p>
-        <div className="social-links">
-          <a href="https://github.com/dolisy" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/dolisy" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaLinkedin />
-          </a>
-          <a href="https://twitter.com/dolisy" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaTwitter />
-          </a>
-        </div>
+       
         <div className="footer-info">
           <p className="footer-description">
             Passionate developer focused on building user-centric solutions. Let's connect and collaborate on exciting projects!

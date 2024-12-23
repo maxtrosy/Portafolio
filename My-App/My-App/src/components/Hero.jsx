@@ -21,7 +21,13 @@ const Hero = () => {
             <a href="#projects" className="hero-button">My Projects</a>
           </div>
 
-          <div className="social-links">
+          
+        </div>
+
+        <div className="hero-image">
+          <img src={dolisyImage} alt="Dolisy Yurni" className="profile-photo" />
+        </div>
+        <div className="social-links">
             <a href="https://github.com/dolisy" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
@@ -32,11 +38,6 @@ const Hero = () => {
               <FaTwitter />
             </a>
           </div>
-        </div>
-
-        <div className="hero-image">
-          <img src={dolisyImage} alt="Dolisy Yurni" className="profile-photo" />
-        </div>
       </div>
     </section>
   );

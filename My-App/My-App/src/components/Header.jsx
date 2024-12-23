@@ -1,29 +1,82 @@
-import React, { useState } from 'react';
-import './Header.css'; // Asegúrate de que el archivo CSS esté correctamente importado
+import React, { useState, useEffect, useRef } from 'react';
+import './Header.css'; // Asegúrate de que el archivo CSS esté en la misma carpeta
+import { FaBars } from 'react-icons/fa'; // Importar el ícono de hamburguesa
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const menuRef = useRef(null);
+  const hamburgerRef = useRef(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // Usar requestAnimationFrame para eficiencia
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 50);
+      });
+    };
+
+    window.addEventListener('scroll', onScroll);
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(event.target)
+      ) {
+        setMenuVisible(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setMenuVisible((prev) => !prev);
   };
 
   return (
-    <header className="header">
-      <div className="logo">
-        <h1>Mi Logo</h1>
-      </div>
-      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+      <div className="logo">MyLogo</div>
+      <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Acerca de</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <button className="menu-toggle" onClick={toggleMenu}>
-        ☰
-      </button>
+      <div
+        className="hamburger-icon"
+        ref={hamburgerRef}
+        onClick={toggleMenu}
+        aria-expanded={menuVisible}
+        aria-controls="dropdown-menu"
+        aria-label="Toggle menu"
+      >
+        <FaBars />
+      </div>
+      {menuVisible && (
+        <div
+          className="dropdown-menu"
+          ref={menuRef}
+          id="dropdown-menu"
+          aria-live="polite"
+        >
+          <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 };

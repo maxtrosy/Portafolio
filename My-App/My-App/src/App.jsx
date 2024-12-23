@@ -3,7 +3,7 @@ import Header from './components/Header';  // Asegúrate de que la ruta sea corr
 import Hero from './components/Hero';  // Asegúrate de que la ruta sea correcta
 import './App.css';  // Importa tu archivo CSS
 import Footer from "./components/Footer";
-import bgImage from './assets/bg.jpg'; // Asegúrate de que la ruta sea correcta
+import bgImage from './assets/bgq.jpg'; // Asegúrate de que la ruta sea correcta
 
 
 
@@ -45,6 +45,7 @@ function App() {
 
   return (
     <div style={appStyle}>
+
       <Header />
       <Hero />
       <Footer />

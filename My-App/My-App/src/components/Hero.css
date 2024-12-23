@@ -1,3 +1,49 @@
+/* General Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Reducir altura del header */
+    transition: background-color 0.3s ease;
+    color: white;
+    /* Color blanco para el texto */
+    margin-left: 100px;
+    /* Agregar margen izquierdo al header */
+
+}
+
+/* Contenedor del logo y hamburguesa alineados */
+.header-logo-hamburger {
+    display: flex;
+    align-items: center;
+    /* Centra el logo y el icono de la hamburguesa verticalmente */
+    gap: 50px;
+    /* Añadir un espacio entre el logo y el botón hamburguesa */
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    /* Reducir tamaño del logo */
+    font-weight: bold;
+    color: white;
+}
+
+/* Icono de la hamburguesa */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Icono de la hamburguesa (ajustado) */
+.hamburger-icon svg {
+    font-size: 24px;
+    color: white;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -10,9 +56,12 @@
     color: white;
     padding: 20px;
     text-align: left;
-    animation: fadeInUp 1.5s ease-out; /* Animación de entrada para la sección */
+    animation: fadeInUp 1.5s ease-out;
+    /* Animación de entrada para la sección */
     position: relative;
-    background-blend-mode: overlay; /* Esto ayudará a mezclar la imagen con el gradiente */
+
+    background-blend-mode: overlay;
+    /* Esto ayudará a mezclar la imagen con el gradiente */
 }
 
 /* Hero content (text and image container) */
@@ -20,28 +69,38 @@
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    align-items: center; /* Asegura que los elementos estén centrados verticalmente */
-    position: relative; /* Necesario para posicionar la imagen dentro de este contenedor */
+    align-items: center;
+    /* Asegura que los elementos estén centrados verticalmente */
+    position: relative;
+    /* Necesario para posicionar la imagen dentro de este contenedor */
 }
 
 /* Sección de texto */
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: flex-start; /* Centra el contenido horizontalmente a la izquierda */
-    max-width: 40%; /* Reducimos el ancho máximo del texto */
-    margin-right: 10%; /* Asegura un espacio a la derecha del texto */
-    margin-left: 10%; /* Mueve el texto hacia la izquierda */
-    animation: fadeInText 1.5s ease-out; /* Animación de entrada para el texto */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: flex-start;
+    /* Centra el contenido horizontalmente a la izquierda */
+    max-width: 40%;
+    /* Reducimos el ancho máximo del texto */
+    margin-right: 10%;
+    /* Asegura un espacio a la derecha del texto */
+    margin-left: 10%;
+    /* Mueve el texto hacia la izquierda */
+    animation: fadeInText 1.5s ease-out;
+    /* Animación de entrada para el texto */
 }
 
 /* Animación de entrada para el texto */
 @keyframes fadeInText {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Entrada desde abajo */
+        transform: translateY(20px);
+        /* Entrada desde abajo */
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -50,40 +109,49 @@
 
 /* Título */
 .hero-title {
+    font-family: 'Roboto', sans-serif;
+    /* Aplica la fuente Roboto */
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-    animation: fadeInText 1.5s ease-out; /* Animación de entrada para el título */
+    margin-top: -50px;
+    /* Mover hacia arriba 50px */
+    animation: fadeInText 1.5s ease-out;
 }
+
 
 /* Descripción */
 .hero-description {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
-    text-align: left; /* Cambiado a left para alinear el texto a la izquierda */
-    animation: fadeInText 1.5s ease-out; /* Animación de entrada para la descripción */
+    text-align: left;
+    /* Cambiado a left para alinear el texto a la izquierda */
+    animation: fadeInText 1.5s ease-out;
+    /* Animación de entrada para la descripción */
 }
 
 /* Botones */
 .hero-buttons {
     margin-bottom: 20px;
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
 }
 
 .hero-button {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #8a2be2;
+    background-color: #7569BF;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-right: 10px;
     transition: background-color 0.3s;
-    animation: fadeInText 1.5s ease-out; /* Animación de entrada para los botones */
+    animation: fadeInText 1.5s ease-out;
+    /* Animación de entrada para los botones */
 }
 
 .hero-button:hover {
@@ -93,13 +161,14 @@
 /* Iconos sociales en el lado derecho */
 .social-links {
     position: fixed; /* Lo posicionamos de manera fija */
-    right: 20px; /* Lo colocamos a la derecha */
+    right: 40px; /* Lo colocamos a la derecha */
     top: 50%; /* Lo centramos verticalmente */
     transform: translateY(-50%); /* Ajusta para que esté perfectamente centrado */
     display: flex;
     flex-direction: column;
     gap: 15px; /* Espaciado entre los iconos */
     z-index: 1000; /* Asegura que los iconos estén por encima de otros elementos */
+    opacity: 1; /* Los iconos ya están visibles */
 }
 
 /* Estilo de los iconos sociales */
@@ -107,39 +176,80 @@
     font-size: 24px;
     color: white;
     transition: color 0.3s;
+    opacity: 0; /* Inicialmente invisibles */
+    animation: fadeInIcons 1.5s ease-out forwards; /* Aplicamos la animación */
 }
 
+/* Estilo para los iconos al pasar el mouse */
 .social-icon:hover {
     color: #8a2be2; /* Cambia a morado al hacer hover */
-}
+} /* Cambia a morado al hacer hover */
 
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Los iconos entran desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Estilo para la imagen con borde y gradiente */
 .hero-image {
-    position: absolute; /* La posicionamos de manera absoluta */
-    left: 75%; /* 75% del ancho de la pantalla */
-    top: 50%; /* Centrado verticalmente */
-    transform: translateX(-50%) translateY(-50%); /* Desplaza el centro de la imagen al 75% del ancho */
-    width: 25vw; /* Definir el ancho en unidades relativas a la ventana */
-    height: 25vw; /* Definir el alto en unidades relativas a la ventana */
-    background-image: none; /* Eliminar el gradiente */
+    position: absolute;
+    /* La posicionamos de manera absoluta */
+    left: 75%;
+    /* 75% del ancho de la pantalla */
+    top: 50%;
+    /* Centrado verticalmente */
+    transform: translateX(-50%) translateY(-50%);
+    /* Desplaza el centro de la imagen al 75% del ancho */
+    width: 25vw;
+    /* Definir el ancho en unidades relativas a la ventana */
+    height: 25vw;
+    /* Definir el alto en unidades relativas a la ventana */
+    background-image: none;
+    /* Eliminar el gradiente */
     display: flex;
     justify-content: center;
-    opacity: 0.3; /* Establecer opacidad del 30% para la imagen */
-    animation: fadeInImage 1.5s ease-out forwards; /* Animación de entrada para la imagen */
+    opacity: 0.3;
+    /* Establecer opacidad del 30% para la imagen */
+    animation: fadeInImage 1.5s ease-out forwards;
+    /* Animación de entrada para la imagen */
+    margin-top: -60px;
 }
 
 /* Animación de entrada para la imagen */
 @keyframes fadeInImage {
     from {
         opacity: 0;
-        transform: translateX(-50%) translateY(-50%) scale(0.8); /* Comienza pequeño */
+        transform: translateX(-50%) translateY(-50%) scale(0.8);
+        /* Comienza pequeño */
     }
+
     to {
-        opacity: 0.9; /* Establece la opacidad al 30% */
-        transform: translateX(-50%) translateY(-50%) scale(1); /* Finaliza al tamaño original */
+        opacity: 0.9;
+        /* Establece la opacidad al 30% */
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        /* Finaliza al tamaño original */
     }
 }
+
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Los iconos entran desde abajo */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .hero-content {
@@ -149,14 +259,16 @@
     }
 
     .hero-text {
-        max-width: 90%; /* Ampliamos el ancho en dispositivos móviles */
+        max-width: 90%;
+        /* Ampliamos el ancho en dispositivos móviles */
         margin-bottom: 20px;
     }
 
     .hero-image {
         max-width: 80%;
-        position: static; /* Para que la imagen se muestre de manera estática en móviles */
-        margin-top: 20px;
+        position: static;
+        /* Para que la imagen se muestre de manera estática en móviles */
+        margin-top: 0px;
         width: 200px;
         height: 200px;
     }
@@ -164,6 +276,7 @@
     .profile-photo {
         width: 100%;
         height: 100%;
-        border-radius: 20%; /* Bordes redondeados para la imagen */
+        border-radius: 20%;
+        /* Bordes redondeados para la imagen */
     }
 }
