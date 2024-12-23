@@ -3,6 +3,9 @@ import Header from './components/Header';  // Asegúrate de que la ruta sea corr
 import Hero from './components/Hero';  // Asegúrate de que la ruta sea correcta
 import './App.css';  // Importa tu archivo CSS
 import Footer from "./components/Footer";
+import bgImage from './assets/bg.jpg'; // Asegúrate de que la ruta sea correcta
+
+
 
 function App() {
   useEffect(() => {
@@ -14,8 +17,6 @@ function App() {
     // Actualizar la posición del círculo al mover el mouse
     const updateCirclePosition = (e) => {
       const { clientX, clientY } = e;
-
-      // Ajuste para que el círculo se alinee con la punta del cursor
       circle.style.left = `${clientX - circle.offsetWidth / 2}px`;
       circle.style.top = `${clientY - circle.offsetHeight / 2}px`;
     };
@@ -30,11 +31,23 @@ function App() {
     };
   }, []);
 
+  // Definir el estilo con el fondo de la imagen
+  const appStyle = {
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+    minHeight: '100vh', // Para asegurarse de que cubra toda la pantalla
+    margin: 0,
+    padding: 0
+  };
+
   return (
-    <div>
+    <div style={appStyle}>
       <Header />
       <Hero />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,127 +1,91 @@
-/* Header.css */
+/* Estilos generales para el header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px; /* Reduce el padding para que el header sea más pequeño */
+  height: 60px; /* Reduce la altura del header */
+  background-color: transparent; /* Fondo transparente */
+  color: white;
+  position: relative;
+  z-index: 100; /* Asegura que el header se vea por encima de otros elementos */
+}
 
-/* Fondo de la página y configuración general */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Fondo oscuro */
-    color: #fff; /* Color del texto blanco */
+.logo h1 {
+  margin: 0;
+  font-size: 36px; /* Reduce el tamaño de la fuente del logo */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* Reduce el espacio entre los enlaces */
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  transform: translateX(100%); /* El menú está oculto a la derecha */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.nav.open {
+  transform: translateX(0); /* Mueve el menú a la vista */
+}
+
+.nav ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px; /* Reduce el tamaño del texto del menú */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px; /* Reduce el padding para que los enlaces sean más pequeños */
+  transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Botón de menú */
+.menu-toggle {
+  display: block;
+  font-size: 28px; /* Reduce el tamaño del botón */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Asegura que el botón esté encima del menú */
+}
+
+/* Mostrar el botón de menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav {
+    display: block; /* Muestra el menú solo cuando está abierto */
   }
-  
-  /* Header styling */
-  header {
-    background-color: #000; /* Fondo negro */
-    padding: 20px 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header {
     justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    transition: background-color 0.3s ease, transform 0.5s ease;
-    animation: fadeInUp 1.5s ease-out; /* Animación de entrada */
   }
-  
-  /* Efecto cuando se hace scroll */
-  header.scrolled {
-    background-color: #111; /* Fondo ligeramente más claro cuando se hace scroll */
-    transform: translateY(0); /* Header regresa a su lugar después de hacer scroll */
+
+  .logo h1 {
+    font-size: 30px; /* Ajuste del tamaño del logo en pantallas pequeñas */
   }
-  
-  /* Logo styling con animación */
-  .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    animation: fadeInUpLogo 1.5s ease-out; /* Solo la animación de entrada sin opacity */
-    opacity: 1; /* Siempre visible */
-  }
-  
-  /* Estilos del menú de navegación */
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards;
-    animation-delay: 0.5s; /* Cada enlace tiene un retardo para la animación */
-    transition: color 0.3s ease;
-  }
-  
-  /* Animación para los enlaces */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px); /* Entrada desde abajo */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Estilo al pasar el mouse sobre los enlaces */
-  nav ul li a:hover {
-    color: #8a2be2; /* Color morado al hacer hover */
-    text-decoration: underline; /* Subrayado al pasar el ratón */
-  }
-  
-  /* Efectos de transición y animación al hacer hover en el logo */
-  .logo:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Animación de los enlaces de navegación */
-  nav ul li:nth-child(1) a {
-    animation-delay: 0.5s;
-  }
-  
-  nav ul li:nth-child(2) a {
-    animation-delay: 0.6s;
-  }
-  
-  nav ul li:nth-child(3) a {
-    animation-delay: 0.7s;
-  }
-  
-  nav ul li:nth-child(4) a {
-    animation-delay: 0.8s;
-  }
-  
-  /* Estilos para dispositivos móviles */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin-bottom: 10px;
-    }
-  
-    .logo {
-      font-size: 24px;
-    }
-  
-    nav ul li a {
-      font-size: 16px;
-    }
-  }
-  
+}

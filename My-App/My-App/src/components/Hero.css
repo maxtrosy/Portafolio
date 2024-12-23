@@ -4,8 +4,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: url('./src/components/img/banner-bg.png'), 
-                linear-gradient(to right, rgba(0, 0, 0, 6) 0%, rgba(0, 0, 0, 0.6) 100%);
+
     background-size: cover;
     background-position: center;
     color: white;
@@ -91,24 +90,29 @@
     background-color: #6a1b9a;
 }
 
-/* Iconos sociales */
+/* Iconos sociales en el lado derecho */
 .social-links {
-    margin-top: 20px;
+    position: fixed; /* Lo posicionamos de manera fija */
+    right: 20px; /* Lo colocamos a la derecha */
+    top: 50%; /* Lo centramos verticalmente */
+    transform: translateY(-50%); /* Ajusta para que esté perfectamente centrado */
     display: flex;
-    justify-content: center; /* Centra los iconos sociales */
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los iconos */
+    z-index: 1000; /* Asegura que los iconos estén por encima de otros elementos */
 }
 
+/* Estilo de los iconos sociales */
 .social-icon {
-    margin-right: 15px;
     font-size: 24px;
     color: white;
     transition: color 0.3s;
-    animation: fadeInText 1.5s ease-out; /* Animación de entrada para los iconos */
 }
 
 .social-icon:hover {
-    color: #8a2be2;
+    color: #8a2be2; /* Cambia a morado al hacer hover */
 }
+
 
 /* Estilo para la imagen con borde y gradiente */
 .hero-image {

@@ -1,34 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import './Header.css';  // Asegúrate de que el archivo CSS esté en la misma carpeta
+import React, { useState } from 'react';
+import './Header.css'; // Asegúrate de que el archivo CSS esté correctamente importado
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <header className={scrolled ? "scrolled" : ""}>
-      <div className="logo">MyLogo</div>
-      <nav>
+    <header className="header">
+      <div className="logo">
+        <h1>Mi Logo</h1>
+      </div>
+      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
     </header>
   );
 };
