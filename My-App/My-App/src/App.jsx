@@ -7,6 +7,9 @@ import bgImage from './assets/bgq.jpg'; // Asegúrate de que la ruta sea correct
 
 import LoadingScreen from "./components/LoadingScreen";
 
+<div style={appStyle}>
+<canvas id="stars" style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}></canvas>
+</div>
 
 function App() {
   useEffect(() => {
