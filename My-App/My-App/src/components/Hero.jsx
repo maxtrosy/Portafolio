@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import dolisyImage from "./img/dolisy.jpg";
+
+
 
 const Hero = () => {
   return (
