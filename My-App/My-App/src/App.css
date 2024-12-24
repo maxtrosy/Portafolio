@@ -2,7 +2,7 @@
 
 /* Fondo global */
 body {
-  background-image: url('./components/bg.jpg'); /* Ruta relativa desde el archivo CSS */
+  background-color: #186313; /* Ruta relativa desde el archivo CSS */
   background-size: cover; /* La imagen cubrirá todo el fondo */
   background-repeat: no-repeat; /* No repetirá la imagen */
   background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
