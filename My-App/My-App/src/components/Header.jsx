@@ -51,8 +51,9 @@ const Header = () => {
           <li><a href="#">About Me</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">CV</a></li>
-          <li><a href="#">Contact Page</a></li>
+          <li><a href="#">Zahir</a></li>
+        
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <div
@@ -72,11 +73,7 @@ const Header = () => {
           id="dropdown-menu"
           aria-live="polite"
         >
-          <ul>
-            <li><a href="#">Opción 1</a></li>
-            <li><a href="#">Opción 2</a></li>
-            <li><a href="#">Opción 3</a></li>
-          </ul>
+          
         </div>
       )}
     </header>

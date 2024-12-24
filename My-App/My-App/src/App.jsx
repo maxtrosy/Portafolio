@@ -5,6 +5,7 @@ import './App.css';  // Importa tu archivo CSS
 import Footer from "./components/Footer";
 import bgImage from './assets/bgq.jpg'; // Asegúrate de que la ruta sea correcta
 
+import LoadingScreen from "./components/LoadingScreen";
 
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
 
   return (
     <div style={appStyle}>
-
+     
       <Header />
       <Hero />
       <Footer />

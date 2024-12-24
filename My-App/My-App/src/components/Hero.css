@@ -108,17 +108,29 @@ header {
 }
 
 /* Título */
+/* Título */
 .hero-title {
-    font-family: 'Roboto', sans-serif;
-    /* Aplica la fuente Roboto */
-    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: -70px;
+    color: white;
+  }
+  
+  .hero-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffcc00; /* Un color destacado */
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: white;
     margin-bottom: 20px;
-    margin-top: -50px;
-    /* Mover hacia arriba 50px */
-    animation: fadeInText 1.5s ease-out;
-}
+  }
+  
 
 
 /* Descripción */
@@ -140,6 +152,45 @@ header {
     /* Centra los botones horizontalmente */
 }
 
+
+  
+/* Contenedor de la imagen y el botón */
+.hero-image-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra la imagen y el botón horizontalmente */
+    justify-content: center; /* Alinea verticalmente */
+}
+
+/* Imagen */
+.profile-photo {
+    max-width: 25vw; /* Ajusta el tamaño de la imagen con un ancho relativo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+/* Estilos para el botón de Spotify */
+.hero-spotify-buttons a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #7569BF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    width: 25vw; /* Hace que el ancho del botón sea el mismo que el de la imagen */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+/* Hover para el botón */
+.hero-spotify-buttons a:hover {
+    background-color: #6a1b9a;
+}
+
+  
+
 .hero-button {
     display: inline-block;
     padding: 12px 30px;
@@ -147,7 +198,7 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 10px;
     transition: background-color 0.3s;
     animation: fadeInText 1.5s ease-out;
