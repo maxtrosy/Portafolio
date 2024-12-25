@@ -47,13 +47,13 @@ const Header = () => {
       <div className="logo">MyLogo</div>
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/aboutme">About Me</a></li>
+          <li><a href="/portofolio">Portfolio</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="#">Zahir</a></li>
         
-          <li><a href="#">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
       <div
