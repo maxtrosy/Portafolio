@@ -60,7 +60,7 @@ function App() {
       content = <Home/>;
       break;
     case '/aboutme':
-      content = <About_Me/>
+      content = <AboutMe/>
       break;
     case '/portofolio':
       content = <Portofolio/>;
