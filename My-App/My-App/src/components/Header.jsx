@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css'; // Asegúrate de que el archivo CSS esté en la misma carpeta
 import { FaBars } from 'react-icons/fa'; // Importar el ícono de hamburguesa
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,16 +44,15 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${scrolled} 'scrolled' : ''}`}>
       <div className="logo">MyLogo</div>
-      <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`nav ${scrolled} 'scrolled' : ''}`}>
         <ul>
           <li><a href="/home">Home</a></li>
           <li><a href="/aboutme">About Me</a></li>
           <li><a href="/portofolio">Portfolio</a></li>
           <li><a href="/blog">Blog</a></li>
-          <li><a href="#">Zahir</a></li>
-        
+
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>

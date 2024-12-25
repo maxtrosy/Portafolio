@@ -2,14 +2,22 @@ import React, { useEffect } from "react";
 import Header from './components/Header';  // Asegúrate de que la ruta sea correcta
 import Hero from './components/Hero';  // Asegúrate de que la ruta sea correcta
 import './App.css';  // Importa tu archivo CSS
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
 import bgImage from './assets/bgq.jpg'; // Asegúrate de que la ruta sea correcta
 
+
 import LoadingScreen from "./components/LoadingScreen";
+
+import Home from "./components/Home";
+import AboutMe from './components/AboutMe';
+import Portofolio from './components/Portofolio';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
 
 
 function App() {
   useEffect(() => {
+
     // Crear el círculo de la linterna
     const circle = document.createElement("div");
     circle.className = "cursor-circle";
@@ -30,7 +38,9 @@ function App() {
       window.removeEventListener("mousemove", updateCirclePosition);
       document.body.removeChild(circle);
     };
-  }, []);
+
+  },
+  [])
 
   // Definir el estilo con el fondo de la imagen
   const appStyle = {
@@ -44,11 +54,33 @@ function App() {
     padding: 0
   };
 
+  let content;
+  switch (window.location.pathname){
+    case '/':
+      content = <Home/>;
+      break;
+    case '/aboutme':
+      content = <About_Me/>
+      break;
+    case '/portofolio':
+      content = <Portofolio/>;
+      break;
+    case '/blog':
+      content = <Blog/>
+      break;
+    case '/contact':
+      content = <Contact/>
+      break;
+    default:
+      content = <div>404 Not Found</div>;
+  }
+
+
   return (
     <div style={appStyle}>
-     
       <Header />
       <Hero />
+      {content}
       <Footer />
     </div>
   );
