@@ -70,12 +70,12 @@ const Hero = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/dolisy"
+            href="https://instagram.com/dolisyuu"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         </div>
       </div>
