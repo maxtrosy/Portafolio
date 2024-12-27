@@ -2,7 +2,7 @@
 
 /* Fondo global */
 body {
-  background-image: url('./components/bg.jpg'); /* Ruta relativa desde el archivo CSS */
+  background-color: black; /* Ruta relativa desde el archivo CSS */
   background-size: cover; /* La imagen cubrirá todo el fondo */
   background-repeat: no-repeat; /* No repetirá la imagen */
   background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
@@ -13,18 +13,7 @@ body {
 }
 
 /* Círculo de luz estilo linterna */
-.cursor-circle {
-  position: fixed;
-  width: 800px; /* Tamaño de la linterna */
-  height: 800px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, rgba(138, 43, 226, 0) 80%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1000; /* Siempre encima de otros elementos */
-  transition: transform 0.05s ease-out;
-  filter: blur(20px); /* Desenfoque para un borde suave */
-  box-shadow: 0 0 50px rgba(138, 43, 226, 0.2); /* Efecto de profundidad */
-}
+
 
 /* Personalización de la barra de desplazamiento para toda la página */
 ::-webkit-scrollbar {
