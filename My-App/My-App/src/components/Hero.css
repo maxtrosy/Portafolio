@@ -122,13 +122,20 @@ header {
   .hero-name {
     font-size: 48px;
     font-weight: bold;
-    color: #ffcc00; /* Un color destacado */
+    color: #ffffff; /* Un color destacado */
   }
   
   .hero-subtitle {
     font-size: 18px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
+  }
+  .purple-text {
+    color: #8a2be2; /* Morado */
+  }
+  
+  .bold-text {
+    font-weight: bold; /* Negrita */
   }
   
 
@@ -165,7 +172,7 @@ header {
 /* Imagen */
 .profile-photo {
     max-width: 25vw; /* Ajusta el tamaño de la imagen con un ancho relativo */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: 400px; /* Mantiene la proporción de la imagen */
     display: block; /* Asegura que la imagen se muestre correctamente */
     margin-bottom: 10px; /* Espacio entre la imagen y el botón */
 }

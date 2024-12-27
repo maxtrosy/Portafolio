@@ -1,88 +1,69 @@
 import React, { useEffect } from "react";
-import Header from './components/Header';  // Asegúrate de que la ruta sea correcta
-import Hero from './components/Hero';  // Asegúrate de que la ruta sea correcta
-import './App.css';  // Importa tu archivo CSS
-import Footer from './components/Footer';
-import bgImage from './assets/bgq.jpg'; // Asegúrate de que la ruta sea correcta
-
-
-import LoadingScreen from "./components/LoadingScreen";
-
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
-import AboutMe from './components/AboutMe';
-import Portofolio from './components/Portofolio';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import Hero from "./components/Hero";
+import bgImage from "./assets/bgq.jpg";
+import "./App.css";
 
 function App() {
   useEffect(() => {
-
-    // Crear el círculo de la linterna
     const circle = document.createElement("div");
     circle.className = "cursor-circle";
     document.body.appendChild(circle);
 
-    // Actualizar la posición del círculo al mover el mouse
     const updateCirclePosition = (e) => {
       const { clientX, clientY } = e;
       circle.style.left = `${clientX - circle.offsetWidth / 2}px`;
       circle.style.top = `${clientY - circle.offsetHeight / 2}px`;
     };
 
-    // Agregar el evento de movimiento del mouse
     window.addEventListener("mousemove", updateCirclePosition);
 
-    // Limpiar el evento al desmontar el componente
     return () => {
       window.removeEventListener("mousemove", updateCirclePosition);
       document.body.removeChild(circle);
     };
+  }, []);
 
-  },
-  [])
-
-  // Definir el estilo con el fondo de la imagen
   const appStyle = {
     backgroundImage: `url(${bgImage})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
-    minHeight: '100vh', // Para asegurarse de que cubra toda la pantalla
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
+    minHeight: "100vh",
     margin: 0,
-    padding: 0
+    padding: 0,
   };
 
-  let content;
-  switch (window.location.pathname){
-    case '/':
-      content = <Home/>;
-      break;
-    case '/aboutme':
-      content = <AboutMe/>
-      break;
-    case '/portofolio':
-      content = <Portofolio/>;
-      break;
-    case '/blog':
-      content = <Blog/>
-      break;
-    case '/contact':
-      content = <Contact/>
-      break;
-    default:
-      content = <div>404 Not Found</div>;
-  }
-
+  // Hook personalizado para obtener la ubicación actual
+  const ShowHero = () => {
+    const location = useLocation();
+    return location.pathname === "/" ? <Hero /> : null;
+  };
 
   return (
-    <div style={appStyle}>
-      <Header />
-      <Hero />
-      {content}
-      <Footer />
-    </div>
+    <Router>
+      <div style={appStyle}>
+        <Header />
+        <ShowHero />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<div>404 Not Found</div>} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

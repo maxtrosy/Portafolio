@@ -15,7 +15,10 @@ const Hero = () => {
             <br />
             <span className="hero-name">DOLISY YURNI</span>
           </h1>
-          <p className="hero-subtitle">A Computer Science Student</p>
+          <p className="hero-subtitle">
+            Yap, a <span className="purple-text bold-text">Computer Science</span> Student
+          </p>
+
           <p className="hero-description">
             A passionate Computer Science major at IPB Indonesia, focused on
             creating innovative and user-friendly solutions.
@@ -34,7 +37,7 @@ const Hero = () => {
               My Projects
             </a>
 
-            
+
           </div>
 
         </div>
@@ -42,14 +45,13 @@ const Hero = () => {
 
 
 
-        <div className="hero-image">
+        <div className="hero-image-container">
           <img src={dolisyImage} alt="Dolisy Yurni" className="profile-photo" />
 
           <div className="hero-spotify-buttons">
-          <div class="hero-spotify-buttons">
-        <a href="https://www.spotify.com" target="_blank">Escuchar en Spotify</a>
-    </div>
-
+            <div className="hero-spotify-buttons">
+              <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Escuchar en Spotify</a>
+            </div>
           </div>
         </div>
         <div className="social-links">
