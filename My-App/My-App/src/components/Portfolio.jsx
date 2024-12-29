@@ -34,8 +34,8 @@ const Portfolio = () => {
       <div className="video-section">
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"  // Cambia por tu enlace de YouTube
-            title="YouTube Video"
+            src="https://ipb.link/editing-video-result"  // Cambia por tu enlace de YouTube
+            title="Instagram Video"
             className="square-video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
