@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            Hello, I'm
+            <span className="purple-text bold-text">Hello</span>, I'm
             <br />
             <span className="hero-name">DOLISY YURNI</span>
           </h1>
@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            A passionate Computer Science major at IPB Indonesia, focused on
+            Undergraduate student at IPB University, Indonesia. Focused on
             creating innovative and user-friendly solutions.
           </p>
           <p className="hero-description">
@@ -50,7 +50,7 @@ const Hero = () => {
 
           <div className="hero-spotify-buttons">
             <div className="hero-spotify-buttons">
-              <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Escuchar en Spotify</a>
+              <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Vibing</a>
             </div>
           </div>
         </div>
