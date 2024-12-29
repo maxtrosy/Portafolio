@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import dolisyImage from "./img/dollii.png";
+import dolisyImage from "./img/dolisyy.png";
 
 
 
@@ -20,13 +20,12 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            Undergraduate student at IPB University, Indonesia. Focused on
-            creating innovative and user-friendly solutions.
+            I'm an undergraduate student at IPB University, Indonesia. I'm curious about 
+            web development, cyber security, and machine learning or AI
           </p>
           <p className="hero-description">
-            I'm a developer with a strong interest in building impactful
-            projects using the latest technologies. I love to collaborate and
-            solve real-world problems through code.
+          Explored new opportunities and pushing my boundaries, 
+          which led me to pursue higher education in one of the most innovative fields today—technology.
           </p>
 
           <div className="hero-buttons">

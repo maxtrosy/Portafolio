@@ -22,10 +22,23 @@ const AboutMe = () => {
       <div className="about-me-content">
         <div className="bio-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ligula eget nulla malesuada pharetra. Suspendisse potenti. Proin vitae suscipit magna, sit amet tempus erat. Nullam hendrerit nunc a venenatis mollis. Nulla facilisi. Cras vulputate velit et efficitur condimentum. Phasellus in felis id neque interdum aliquet sed vel turpis. Integer in turpis eget nulla ullamcorper pharetra.
+          Heyyo, I'm Dolisy. You can call me Dofy (or literally anything, idc) I’m an undergraduate Computer Science student at IPB University in Bogor, Indonesia. 
+          Originally? I'm from Lampung, that cool province chilling on the southern tip of Sumatra Island. It's got rich culture, jaw-dropping beaches, and the iconic Way Kambas National Park (seriously, you gotta check it out). 
+          Lampung and Bogor? Totally different vibes. Lampung's all sunny and beachy, while Bogor's like, "Bring an umbrella or you're drenched" — it's basically the Rain City.
           </p>
           <p>
-            Duis commodo volutpat nibh, a consequat magna facilisis quis. Mauris rhoncus sem vel orci tempor, nec faucibus dolor iaculis. Sed tincidunt dui ut tellus malesuada, nec aliquet justo consectetur. Nam vitae dictum libero. Cras vitae nisi quis elit convallis congue. Pellentesque ac leo suscipit, posuere elit at, elementum magna. In gravida bibendum enim, at porttitor erat feugiat et.
+          Why Computer Science, you ask? Cuz tech is LIFE, and it’s where all the magic happens! I mean, who wouldn’t want to dive into a world that’s always upgrading and never boring? 
+          Tech isn’t just about scrolling TikTok or sending memes—it’s about changing the game, hacking, and even creating the next big app. Technology isn’t just the future, it’s the NOW.
+          Through my studies, I’m manifesting big dreams: building apps, solving problems, and maybe, just maybe, making the world a little less buggy.
+          I’m here for it. Geeky? Maybe. Excited? Absolutely.
+          </p>
+          <p>
+          Why IPB University? Easy. It’s green AF—like, literally a whole jungle vibe. The moment I saw the campus, I was like, “Yap, this is where I wanna stress about deadlines.” 
+          Surrounded by trees and chill nature vibes, it’s the perfect place to pretend I’m at peace while cramming for exams. Tbh, studying here feels like living in a National Geographic episode, 
+          minus the wild animals (okay, maybe some lizards). It’s not just a campus; it’s a whole mood. Plus, breathing fresh air while crying over assignments? Chef’s kiss..
+          </p>
+          <p>
+          "Stay hungry, stay foolish." – Steve Jobs (aka the OG tech legend).
           </p>
         </div>
       </div>

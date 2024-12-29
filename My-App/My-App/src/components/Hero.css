@@ -185,7 +185,7 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: background-color 0.3s;
     width: 25vw; /* Hace que el ancho del botón sea el mismo que el de la imagen */
     text-align: center; /* Centra el texto dentro del botón */
