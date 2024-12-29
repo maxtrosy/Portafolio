@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import dolisyImage from "./img/dolisy.jpg";
+import dolisyImage from "./img/dollii.png";
 
 
 
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
         <div className="social-links">
           <a
-            href="https://github.com/dolisy"
+            href="https://github.com/dolisyyurni"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -64,7 +64,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/dolisy"
+            href="https://ipb.link/linkedin-dolisy"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

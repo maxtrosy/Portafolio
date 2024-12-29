@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AboutMe.css';
-import catImage from '../assets/cat.png'; // Importa la imagen correctamente
+import catImage from './img/doli bulet.png'; // Importa la imagen correctamente
 
 const AboutMe = () => {
   const [activeSection, setActiveSection] = useState('tech-stack'); // Estado para controlar qué sección mostrar
