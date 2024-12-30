@@ -46,10 +46,45 @@ const AboutMe = () => {
       {/* Sección de Educación */}
       <div className="education-section">
         <h3 className="section-title">Education</h3>
-        <ul>
-          <li>Computer Science - University of XYZ (Graduated 2024)</li>
-          <li>Web Development Bootcamp - ABC Academy (2023)</li>
-        </ul>
+        <body>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="icon"> <img src ='./assets/kindergarten.svg'  /></div>
+              <div class="box">
+                <div class="year">2010</div>
+                <div class="description">High School</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="icon">⏰</div>
+              <div class="box">
+                <div class="year">2012</div>
+                <div class="description">Graduation</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="icon">📚</div>
+              <div class="box">
+                <div class="year">2014</div>
+                <div class="description">College</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="icon">👨‍🎓</div>
+              <div class="box">
+                <div class="year">2016</div>
+                <div class="description">Master Degree</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="icon">🏅</div>
+              <div class="box">
+                <div class="year">2020</div>
+                <div class="description">PhD</div>
+              </div>
+            </div>
+          </div>
+        </body>
       </div>
 
       {/* Sección de Habilidades */}
