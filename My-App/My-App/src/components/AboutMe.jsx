@@ -1,9 +1,46 @@
 import React, { useState } from 'react';
 import './AboutMe.css';
 import catImage from './img/doli bulet.png'; // Importa la imagen correctamente
+import kindergartenIcon from '../assets/kindergarten.png';
+import elementaryIcon from '../assets/elementary.png';
+import jhsIcon from '../assets/jhs.png';
+import hsIcon from '../assets/hs.png';
+import uniIcon from '../assets/uni.png';
 
 const AboutMe = () => {
   const [activeSection, setActiveSection] = useState('tech-stack'); // Estado para controlar qué sección mostrar
+  const timelineData = [
+    {
+        year: '2010',
+        description: 'High School',
+        icon: kindergartenIcon,
+        achievements: ['Math Olympiad Winner', 'Debate Team Captain']
+    },
+    {
+        year: '2012',
+        description: 'Graduation',
+        icon: elementaryIcon,
+        achievements: ['Graduated with Honors', 'Valedictorian']
+    },
+    {
+        year: '2014',
+        description: 'College',
+        icon: jhsIcon,
+        achievements: ['Dean’s List', 'Internship at TechCorp']
+    },
+    {
+        year: '2016',
+        description: 'Master Degree',
+        icon: hsIcon,
+        achievements: ['Research Paper Published', 'Teaching Assistant']
+    },
+    {
+        year: '2020',
+        description: 'PhD',
+        icon: uniIcon,
+        achievements: ['Doctoral Thesis Award', 'Keynote Speaker at Conference']
+    }
+  ];
 
   return (
     <div className="about-me-container">
@@ -46,45 +83,34 @@ const AboutMe = () => {
       {/* Sección de Educación */}
       <div className="education-section">
         <h3 className="section-title">Education</h3>
-        <body>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="icon"> <img src ='./assets/kindergarten.svg'  /></div>
-              <div class="box">
-                <div class="year">2010</div>
-                <div class="description">High School</div>
+
+          {timelineData.map((item, index) => (
+            <div key={index} className="timeline-item">
+              <div className="icon-wrapper">
+                <img src={item.icon} alt={item.description} className="icon"/>
+              </div>
+
+              <div className="box">
+                <div className="year">{item.year}</div>
+                <div className="description">{item.description}</div>
+              </div>
+
+              <div className="achievements">
+                <ul>
+                  {item.achievements.map((achievement, i) => (
+                    <li key={i}>{achievement}</li>
+                  ))}
+                </ul>
+                {index < timelineData.length - 1 && <div className="dashed-line"></div>}
               </div>
             </div>
-            <div class="timeline-item">
-              <div class="icon">⏰</div>
-              <div class="box">
-                <div class="year">2012</div>
-                <div class="description">Graduation</div>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="icon">📚</div>
-              <div class="box">
-                <div class="year">2014</div>
-                <div class="description">College</div>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="icon">👨‍🎓</div>
-              <div class="box">
-                <div class="year">2016</div>
-                <div class="description">Master Degree</div>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="icon">🏅</div>
-              <div class="box">
-                <div class="year">2020</div>
-                <div class="description">PhD</div>
-              </div>
-            </div>
-          </div>
-        </body>
+          ))}
+      </div>
+
+      <div className="timeline-line">
+        {timelineData.map((_, index)=> (
+          <div className="circle" key={index}></div>
+        ))}
       </div>
 
       {/* Sección de Habilidades */}
