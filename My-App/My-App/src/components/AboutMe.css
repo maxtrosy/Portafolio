@@ -72,44 +72,36 @@
   }
 
 .timeline {
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 10px;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 5%;
-    right: 5%;
+    left: 0;
+    right: 0;
     height: 6px;
     background: #e0e0e0;
     transform: translateY(-50%);
-    z-index: 1;
     border-radius: 3px;
 }
 
-.timeline-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 6px;
-}
-
 .timeline-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-direction: column;
     position: relative;
     z-index: 2;
     text-align: center;
+    margin: 0 20px;
 }
 
 .timeline-item::before {
@@ -122,8 +114,14 @@
   height: 20px;
   background: #3f51b5;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 3;
   border: 3px solid #fff;
+}
+
+.icon-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
 }
 
 .timeline-item .icon {
@@ -136,15 +134,16 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   transition: transform 0.3s;
+  overflow: hidden;
 }
 
 .icon img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
+  max-width: 60%;
+  max-height: 60%;
   transition: transform 0.3s ease;
+  object-fit: cover;
 }
 
 .icon img:hover {

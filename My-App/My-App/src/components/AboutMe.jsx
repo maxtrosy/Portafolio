@@ -84,10 +84,11 @@ const AboutMe = () => {
       <div className="education-section">
         <h3 className="section-title">Education</h3>
 
+        <div className="timeline">
           {timelineData.map((item, index) => (
             <div key={index} className="timeline-item">
               <div className="icon-wrapper">
-                <img src={item.icon} alt={item.description} className="icon"/>
+                <img src={item.icon} className="icon"/>
               </div>
 
               <div className="box">
@@ -101,16 +102,10 @@ const AboutMe = () => {
                     <li key={i}>{achievement}</li>
                   ))}
                 </ul>
-                {index < timelineData.length - 1 && <div className="dashed-line"></div>}
               </div>
             </div>
           ))}
-      </div>
-
-      <div className="timeline-line">
-        {timelineData.map((_, index)=> (
-          <div className="circle" key={index}></div>
-        ))}
+        </div>
       </div>
 
       {/* Sección de Habilidades */}
