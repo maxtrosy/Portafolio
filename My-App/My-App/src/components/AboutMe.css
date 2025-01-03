@@ -2,23 +2,23 @@
 .bio-details {
     text-align: center;
     margin-top: 20px;
-  }
-  
-  .bio-name {
+}
+
+.bio-name {
     font-size: 3rem; /* Aumentamos el tamaño del nombre */
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     margin-bottom: 10px;
-  }
-  
-  .bio-id {
+}
+
+.bio-id {
     font-size: 1.5rem; /* Aumentamos ligeramente el tamaño del ID */
     color: white;
     margin-bottom: 30px;
-  }
-  
-  .about-me-container {
+}
+
+.about-me-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,25 +26,25 @@
     border-radius: 15px; /* Bordes redondeados para el contenedor */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar el contenedor */
     color: white; /* Aseguramos que el texto sea blanco por defecto */
-  }
-  
-  /* Imagen de perfil redonda */
-  .rounded-picture {
+}
+
+/* Imagen de perfil redonda */
+.rounded-picture {
     width: 200px; /* Aumentamos el tamaño de la imagen */
     height: 200px; /* Aumentamos el tamaño de la imagen */
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #333; /* Borde suave y oscuro */
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-  }
-  
-  .rounded-picture:hover {
+}
+
+.rounded-picture:hover {
     transform: scale(1.05);
     border-color: #6a1b9a; /* Cambiar el borde al hacer hover */
-  }
-  
-  /* Contenedor de texto sobre mí con fondo transparente */
-  .about-me-content {
+}
+
+/* Contenedor de texto sobre mí con fondo transparente */
+.about-me-content {
     width: 80%;
     text-align: justify;
     font-size: 1.2rem;
@@ -54,23 +54,24 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-  }
-  
-  .about-me-content p {
+}
+
+.about-me-content p {
     margin-bottom: 20px;
     color: #e0e0e0; /* Color de texto suave pero claro */
-  }
-  
-  /* Sección de educación */
-  .education-section {
+}
+
+/* Sección de educación */
+.education-section {
     width: 80%;
     margin-top: 50px;
     background-color: rgba(68, 68, 68, 0.3); /* Fondo gris oscuro con más transparencia */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-  }
+}
 
+/* Línea de tiempo */
 .timeline {
     width: 100%;
     padding: 20px 0;
@@ -94,6 +95,7 @@
     border-radius: 3px;
 }
 
+/* Elementos de la línea de tiempo */
 .timeline-item {
     display: inline-flex;
     align-items: center;
@@ -198,101 +200,29 @@
 .timeline-item {
     animation: fadeIn 0.6s ease-in-out;
 }
-  
-  .education-title {
+
+/* Título de la educación */
+.education-title {
     font-size: 2rem;
     margin-bottom: 15px;
     font-weight: bold;
     color: #6a1b9a; /* Título con un color destacado */
-  }
-  
-  /* Sección de habilidades */
-  .skills-section {
-    width: 80%;
-    margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.3); /* Fondo gris oscuro con más transparencia */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-  }
-  
-  .skills-buttons {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 25px;
-  }
-  
-  .skills-button {
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border: none;
-    background-color: #6a1b9a; /* Fondo morado suave */
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .skills-button:hover {
-    background-color: #7b1fa2; /* Cambio de color en hover */
-    transform: scale(1.05); /* Efecto de agrandar al hacer hover */
-  }
-  
-  .skills-button.active {
-    background-color: #7b1fa2; /* Resalta el botón activo */
-  }
-  
-  .skills-bar {
-    height: 2px;
-    background-color: #7b1fa2; /* Barra morada para separación */
-    margin-bottom: 20px;
-  }
-  
-  .skills-content {
-    margin-bottom: 25px;
-  }
-  
-  .skills-tags {
-    display: flex;
-    gap: 25px;
-    margin-top: 20px;
-  }
-  
-  .skills-tag {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333; /* Fondo oscuro para las etiquetas */
-    color: white;
-    border-radius: 18px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .skills-tag:hover {
-    transform: scale(1.1); /* Efecto de aumento */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
     .about-me-content {
       width: 90%;
       font-size: 1rem;
     }
-  
+
     .rounded-picture {
       width: 150px; /* Aumentamos el tamaño para pantallas más pequeñas */
       height: 150px;
     }
-  
+
     .skills-tag {
       width: 100px;
       height: 100px;
     }
-  }
-  
+}

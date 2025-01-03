@@ -9,6 +9,9 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import bgImage from "./assets/bgq.jpg";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import "./App.css";
 
 function App() {
