@@ -77,7 +77,7 @@
     padding: 20px 0;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     overflow-x: auto;
     white-space: nowrap;
@@ -87,12 +87,12 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
-    height: 6px;
+    left: 5%;
+    right: 5%;
+    height: 4px;
     background: #e0e0e0;
     transform: translateY(-50%);
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 /* Elementos de la línea de tiempo */
@@ -112,12 +112,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background: #3f51b5;
+  width: 16px;
+  height: 16px;
+  background: #7b1fa2;
   border-radius: 50%;
   z-index: 3;
-  border: 3px solid #fff;
+  border: 3px solid #e0e0e0;
 }
 
 .icon-wrapper {
@@ -154,10 +154,10 @@
 
 .box {
   background: #f9f9f9;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px 15px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 15px;
   width: 150px;
 }
 
