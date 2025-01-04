@@ -38,9 +38,9 @@ const Portfolio = () => {
           padding: '8px',
           boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
           transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-        }} 
-        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+        }}
+          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
         >
           <iframe
             width="560"
@@ -89,40 +89,50 @@ const Portfolio = () => {
       <VerticalCarousel />
 
       {/* Projects Section */}
-      <div style={{
-        marginTop: '60px',
-        textAlign: 'center',
-        padding: '40px',
-        borderTop: '2px solid #fff',
-        maxWidth: '80%',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        background: 'none',  // Removed the purple gradient
-        borderRadius: '12px',
-        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',  // Light shadow for subtle depth
-      }} 
-      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-      onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+      <div
+        style={{
+          marginTop: '60px',
+          textAlign: 'center',
+          padding: '50px',
+          borderTop: '4px solid #f0f0f0',  // Slightly lighter border for subtle contrast
+          maxWidth: '85%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          background: 'linear-gradient(135deg, #2b2b2b, #333)', // Dark gradient background
+          borderRadius: '15px',
+          boxShadow: '0 12px 40px rgba(0, 0, 0, 0.1)',  // Deeper shadow for more elevation
+          transition: 'transform 0.3s ease-in-out',  // Smooth transition for hover effect
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
       >
-        <h2 style={{
-          fontSize: '2.5em',
-          fontWeight: 'bold',
-          color: '#fff',
-          marginBottom: '20px',
-          letterSpacing: '1px',
-        }}>
+        <h2
+          style={{
+            fontSize: '3em',
+            fontWeight: '700',
+            color: '#fff',
+            marginBottom: '15px',
+            letterSpacing: '2px',
+            textTransform: 'uppercase',  // Making the title more impactful
+            fontFamily: "'Roboto', sans-serif",  // A modern font for a sleek look
+          }}
+        >
           Projects
         </h2>
-        <p style={{
-          fontSize: '2em',
-          color: '#fff',
-          fontWeight: '300',
-          fontFamily: 'Arial, sans-serif',
-          letterSpacing: '1px',
-        }}>
+        <p
+          style={{
+            fontSize: '1.8em',
+            color: '#f0f0f0',  // Slightly lighter text color for readability
+            fontWeight: '400',
+            fontFamily: "'Arial', sans-serif",
+            letterSpacing: '1px',
+            lineHeight: '1.6',  // Better readability with adjusted line height
+          }}
+        >
           Coming Soon
         </p>
       </div>
+
     </div>
   );
 };
