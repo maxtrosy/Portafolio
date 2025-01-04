@@ -5,7 +5,7 @@
 }
 
 .bio-name {
-    font-size: 3rem; /* Aumentamos el tamaño del nombre */
+    font-size: 3.2rem; /* Aumentamos el tamaño del nombre */
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -30,8 +30,8 @@
 
 /* Imagen de perfil redonda */
 .rounded-picture {
-    width: 200px; /* Aumentamos el tamaño de la imagen */
-    height: 200px; /* Aumentamos el tamaño de la imagen */
+    width: 300px; /* Aumentamos el tamaño de la imagen */
+    height: 300px; /* Aumentamos el tamaño de la imagen */
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #333; /* Borde suave y oscuro */
@@ -61,168 +61,20 @@
     color: #e0e0e0; /* Color de texto suave pero claro */
 }
 
-/* Sección de educación */
 .education-section {
-    width: 80%;
-    margin-top: 50px;
-    background-color: rgba(68, 68, 68, 0.3); /* Fondo gris oscuro con más transparencia */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  width: 80%;
+  margin: 50px auto;
+  background-color: rgba(68, 68, 68, 0.1); /* Fondo casi transparente */
+  padding: 20px;
+  border-radius: 12px; /* Bordes ligeramente redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #333; /* Texto oscuro para contraste */
 }
 
-/* Línea de tiempo */
-.timeline {
-    width: 100%;
-    padding: 20px 0;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    right: 5%;
-    height: 4px;
-    background: #e0e0e0;
-    transform: translateY(-50%);
-    border-radius: 2px;
-}
-
-/* Elementos de la línea de tiempo */
-.timeline-item {
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin: 0 20px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 16px;
-  height: 16px;
-  background: #7b1fa2;
-  border-radius: 50%;
-  z-index: 3;
-  border: 3px solid #e0e0e0;
-}
-
-.icon-wrapper {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 10px;
-}
-
-.timeline-item .icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #7b1fa2;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  margin-bottom: 24px;
-  transition: transform 0.3s;
-  overflow: hidden;
-}
-
-.icon img {
-  max-width: 60%;
-  max-height: 60%;
-  transition: transform 0.3s ease;
-  object-fit: cover;
-}
-
-.icon img:hover {
-  transform: scale(1.2);
-}
-
-.box {
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
-  margin-top: 15px;
-  width: 150px;
-}
-
-.year {
-  font-size: 16px;
+.section-title {
+  font-size: 28px;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.description {
-  font-size: 14px;
-  color: #666;
-}
-
-.achievements {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #555;
-  text-align: left;
-}
-
-.achievements li {
-  margin-bottom: 5px;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.timeline-item {
-    animation: fadeIn 0.6s ease-in-out;
-}
-
-/* Título de la educación */
-.education-title {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #6a1b9a; /* Título con un color destacado */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .about-me-content {
-      width: 90%;
-      font-size: 1rem;
-    }
-
-    .rounded-picture {
-      width: 150px; /* Aumentamos el tamaño para pantallas más pequeñas */
-      height: 150px;
-    }
-
-    .skills-tag {
-      width: 100px;
-      height: 100px;
-    }
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Un tono gris elegante */
 }
