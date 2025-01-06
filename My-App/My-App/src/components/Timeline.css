@@ -1,19 +1,37 @@
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  position: relative;
+}
+
 .recuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 10px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .logo-superior,
 .logo-inferior {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .logo-circle {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #000;
   border-radius: 50%;
   display: flex;
@@ -32,40 +50,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  margin: 20px 0;
-}
-
-.linea-central::before {
-  content: "";
-  position: absolute;
+  margin: 10px 0;
   width: 100%;
-  height: 5px;
-  background: #000;
-  top: 50%;
-  z-index: 1;
+  position: relative;
 }
 
-.circle-left,
-.circle-right,
-.circle-center {
-  width: 40px;
-  height: 40px;
+.circle-small {
+  width: 20px;
+  height: 20px;
   border: 2px solid #000;
   border-radius: 50%;
   background: #fff;
   z-index: 2;
 }
 
-.circle-center {
+.circle-large {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #fff;
   position: relative;
-  width: 60px;
-  height: 60px;
+  z-index: 1;
 }
 
 .circle-inner {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #000;
   border-radius: 50%;
   background: #fff;
@@ -75,12 +86,22 @@
   transform: translate(-50%, -50%);
 }
 
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  z-index: 0;
+}
+
 .titulo {
-  font-size: 20px;
-  margin: 15px 0;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
 .texto-complementario {
-  font-size: 14px;
+  font-size: 12px;
   color: #555;
 }
