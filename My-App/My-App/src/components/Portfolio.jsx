@@ -45,7 +45,7 @@ const Portfolio = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"  // Replace with your YouTube video URL
+            src="https://youtu.be/qXnImy04nMQ?si=fEMI_bHQ3iD_ZWml"  // Replace with your YouTube video URL
             title="YouTube video"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
