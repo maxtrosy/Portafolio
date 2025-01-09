@@ -6,8 +6,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       {/* EDITING VIDEO Section */}
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       <h1 style={{
         fontSize: '3em',
         fontWeight: 'bold',
@@ -53,9 +52,7 @@ const Portfolio = () => {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-=======
-=======
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
+
       <section className="portfolio-section">
         <h1 className="portfolio-title">Editing Video</h1>
         <div className="portfolio-content">
@@ -75,12 +72,11 @@ const Portfolio = () => {
               Dive into video editing projects that highlight creativity and storytelling. This embedded video showcases the journey of transforming ideas into visuals that captivate and inspire.
             </p>
           </div>
-<<<<<<< HEAD
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
-=======
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
         </div>
       </section>
+    </div>
+    </div>
+      
 
       {/* DESIGN POSTER Section */}
       <section className="portfolio-section">

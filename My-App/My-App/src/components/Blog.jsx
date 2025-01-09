@@ -65,20 +65,19 @@ const Blog = () => {
           >
             <img src={card.image} alt={card.title} className="card-image" />
             <div className="card-content">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
               <h2 className="card-title">Blog Title {card}</h2>
               <p className="card-text">
                 Someone said that 
               </p>
-=======
+
               <h2 className="card-title">{card.title}</h2>
               <p className="card-text">{card.text}</p>
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
-=======
+
+
               <h2 className="card-title">{card.title}</h2>
               <p className="card-text">{card.text}</p>
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
+
             </div>
           </div>
         ))}
@@ -86,10 +85,7 @@ const Blog = () => {
       {activeCard !== null && (
         <div className="expanded-card">
           <div className="expanded-card-content">
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
             <h2>{cardData[activeCard].title}</h2>
             <p>{cardData[activeCard].expandedText}</p>
             <button
@@ -98,10 +94,7 @@ const Blog = () => {
             >
               Close
             </button>
-<<<<<<< HEAD
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
-=======
->>>>>>> 53534acd705bd744f13fed0b8427eec0e3d85bcc
+
           </div>
         </div>
       )}
