@@ -66,15 +66,6 @@ const Blog = () => {
             <img src={card.image} alt={card.title} className="card-image" />
             <div className="card-content">
 
-              <h2 className="card-title">Blog Title {card}</h2>
-              <p className="card-text">
-                Someone said that 
-              </p>
-
-              <h2 className="card-title">{card.title}</h2>
-              <p className="card-text">{card.text}</p>
-
-
               <h2 className="card-title">{card.title}</h2>
               <p className="card-text">{card.text}</p>
 
@@ -82,10 +73,11 @@ const Blog = () => {
           </div>
         ))}
       </div>
+
       {activeCard !== null && (
         <div className="expanded-card">
           <div className="expanded-card-content">
-=======
+
             <h2>{cardData[activeCard].title}</h2>
             <p>{cardData[activeCard].expandedText}</p>
             <button
