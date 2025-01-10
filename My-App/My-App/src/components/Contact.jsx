@@ -29,13 +29,13 @@ const Contact = () => {
 
       {/* Íconos de redes sociales */}
       <div className="social-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <i className="fab fa-facebook-f"></i>
+        <a href="https://line.me/ti/p/GrKcxyc5qX" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fab fa-line"></i>
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <i className="fab fa-twitter"></i>
+        <a href="https://instagram.com/dolisyuu" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://ipb.link/linkedin-dolisy" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>

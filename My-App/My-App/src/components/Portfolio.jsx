@@ -5,9 +5,8 @@ import VerticalCarousel from './VerticalCarousel';
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      {/* EDITING VIDEO Section */}
-         
 
+      {/* EDITING VIDEO Section */}
       <section className="portfolio-section">
         <h1 className="portfolio-title">Editing Video</h1>
         <div className="portfolio-content">
@@ -21,6 +20,7 @@ const Portfolio = () => {
               allowFullScreen
             ></iframe>
           </div>
+          
           {/* Text Section */}
           <div className="portfolio-description">
             <p>

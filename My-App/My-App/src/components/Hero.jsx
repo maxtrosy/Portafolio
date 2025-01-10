@@ -49,7 +49,7 @@ const Hero = () => {
 
           <div className="hero-spotify-buttons">
             <div className="hero-spotify-buttons">
-              <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Vibing</a>
+              <a href="https://open.spotify.com/playlist/4mNaDuji6cZuqeHXpSn0bg?si=Ab_EF5BlSPSr7wzOgQHKoQ&pi=-aNNtxvkSYGcP " target="_blank" rel="noopener noreferrer">Vibing</a>
             </div>
           </div>
         </div>

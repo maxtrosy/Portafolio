@@ -58,23 +58,23 @@ const AboutMe = () => {
       <div className="about-me-content">
         <div className="bio-text">
           <p>
-            Heyyo, I'm Dolisy. You can call me Dofy (or literally anything, idc) I’m an undergraduate Computer Science student at IPB University in Bogor, Indonesia.
-            Originally? I'm from Lampung, that cool province chilling on the southern tip of Sumatra Island. It's got rich culture, jaw-dropping beaches, and the iconic Way Kambas National Park (seriously, you gotta check it out).
-            Lampung and Bogor? Totally different vibes. Lampung's all sunny and beachy, while Bogor's like, "Bring an umbrella or you're drenched" — it's basically the Rain City.
+          Hi, I’m Dolisy, but you can call me Dofy. I am currently an undergraduate Computer Science student at IPB University in Bogor, Indonesia. 
+          Originally, I come from Lampung, a vibrant province located at the southern tip of Sumatra Island. Lampung is renowned for its rich cultural heritage, breathtaking beaches, and the iconic Way Kambas National Park—a destination truly worth exploring.
+          Living in both Lampung and Bogor has exposed me to two very distinct environments. Lampung offers a sunny, coastal atmosphere, while Bogor, famously known as the “Rain City,” greets you with frequent downpours and lush greenery—a stark yet refreshing contrast.
           </p>
           <p>
-            Why Computer Science, you ask? Cuz tech is LIFE, and it’s where all the magic happens! I mean, who wouldn’t want to dive into a world that’s always upgrading and never boring?
-            Tech isn’t just about scrolling TikTok or sending memes—it’s about changing the game, hacking, and even creating the next big app. Technology isn’t just the future, it’s the NOW.
-            Through my studies, I’m manifesting big dreams: building apps, solving problems, and maybe, just maybe, making the world a little less buggy.
-            I’m here for it. Geeky? Maybe. Excited? Absolutely.
+          Why Computer Science? Technology has always fascinated me. It’s a dynamic field that never stops evolving, offering endless opportunities for innovation. 
+          For me, it’s not just about the entertainment value—like scrolling through social media or sharing memes—but about leveraging technology to solve real-world problems, develop impactful applications, and drive meaningful change.
+          Technology is no longer just the future; it’s the present. Through my studies, I aspire to contribute to this ever-evolving domain by creating solutions that improve lives, reduce inefficiencies, and, perhaps, make the world a little less “buggy.”
           </p>
           <p>
-            Why IPB University? Easy. It’s green AF—like, literally a whole jungle vibe. The moment I saw the campus, I was like, “Yap, this is where I wanna stress about deadlines.”
-            Surrounded by trees and chill nature vibes, it’s the perfect place to pretend I’m at peace while cramming for exams. Tbh, studying here feels like living in a National Geographic episode,
-            minus the wild animals (okay, maybe some lizards). It’s not just a campus; it’s a whole mood. Plus, breathing fresh air while crying over assignments? Chef’s kiss..
+          Why IPB? IPB University stood out to me for its distinctive and lush environment. The campus is surrounded by greenery, offering a serene and natural atmosphere that fosters both academic focus and personal well-being. 
+          From the moment I first visited, I knew it was the ideal place to embark on my educational journey, even amidst the inevitable challenges of academic life. The campus feels like a blend of academia and nature, creating a tranquil yet inspiring setting that encourages productivity. 
+          Studying here is akin to living in a picturesque documentary setting—peaceful, refreshing, and invigorating. The fresh air and scenic surroundings provide a unique sense of balance, even during demanding times like exams or project deadlines. 
+          It’s more than just a campus; it’s an environment that supports growth, creativity, and resilience.
           </p>
           <p>
-            "Stay hungry, stay foolish." – Steve Jobs (aka the OG tech legend).
+            "Stay hungry, stay foolish." – Steve Jobs 
           </p>
         </div>
       </div>
