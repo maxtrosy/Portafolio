@@ -74,7 +74,7 @@
 
 .section-title {
   font-size: 28px;
-
+}
 /* Línea de tiempo */
 .timeline {
     width: 100%;
@@ -172,3 +172,4 @@
   text-align: center;
   color: #ffffff; /* Un tono gris elegante */
 }
+

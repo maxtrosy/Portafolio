@@ -20,8 +20,8 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            I'm an undergraduate student at IPB University, Indonesia. I'm curious about 
-            web development, cyber security, and machine learning or AI
+          I am an undergraduate student at IPB University, Indonesia, pursuing a degree in Computer Science. 
+          Passionate in several key areas of technology, including web development, cybersecurity, and machine learning or artificial intelligence.
           </p>
           <p className="hero-description">
           Explored new opportunities and pushing my boundaries, 
