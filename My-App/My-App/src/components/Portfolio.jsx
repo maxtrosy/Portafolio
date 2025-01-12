@@ -30,7 +30,6 @@ const Portfolio = () => {
       </section>
 
       <section className="portofolio-section">
-        <h1 className="portofolio-title">Sketch</h1>
       </section>
 
       {/* DESIGN POSTER Section */}

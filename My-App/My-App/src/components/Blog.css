@@ -17,7 +17,23 @@
   text-align: center;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
+
+.blog-title::after {
+  content: '';
+  display: block;
+  width: 50%; /* Tamaño inicial del decorador */
+  height: 4px; /* Grosor de la línea */
+  background-color: white;
+  margin: 10px auto 0; /* Espaciado debajo del título */
+  transition: width 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.blog-title:hover::after {
+  width: 80%; /* Aumenta el ancho al pasar el cursor */
+}
+
 
 /* Card Container */
 .card-container {

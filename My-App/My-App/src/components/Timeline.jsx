@@ -1,6 +1,5 @@
-
-import React from "react";
-import "./timeline.css";
+import React from 'react';
+import './Timeline.css';
 
 const timelineData = [
   {
