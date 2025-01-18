@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css'; // Asegúrate de que el archivo CSS esté en la misma carpeta
 import { FaBars } from 'react-icons/fa'; // Importar el ícono de hamburguesa
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -10,7 +11,6 @@ const Header = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      // Usar requestAnimationFrame para eficiencia
       requestAnimationFrame(() => {
         setScrolled(window.scrollY > 50);
       });
@@ -47,13 +47,21 @@ const Header = () => {
       <div className="logo">MyLogo</div>
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Zahir</a></li>
-        
-          <li><a href="#">Contact</a></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/aboutme">About Me</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
       <div
@@ -73,7 +81,23 @@ const Header = () => {
           id="dropdown-menu"
           aria-live="polite"
         >
-          
+          <ul>
+            <li>
+              <Link to="/home" onClick={() => setMenuVisible(false)}></Link>
+            </li>
+            <li>
+              <Link to="/aboutme" onClick={() => setMenuVisible(false)}>About Me</Link>
+            </li>
+            <li>
+              <Link to="/portfolio" onClick={() => setMenuVisible(false)}>Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/blog" onClick={() => setMenuVisible(false)}>Blog</Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setMenuVisible(false)}>Contact</Link>
+            </li>
+          </ul>
         </div>
       )}
     </header>

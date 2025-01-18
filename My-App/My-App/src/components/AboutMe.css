@@ -1,0 +1,200 @@
+/* Estilos adicionales para el nombre y el ID */
+.bio-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Título del nombre con animación */
+.bio-name {
+  font-size: 3.2rem; /* Aumentamos el tamaño del nombre */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bio-name::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 3px;
+  background-color: white;
+  margin: 10px auto 0;
+  transition: width 0.3s ease;
+}
+
+.bio-name:hover::after {
+  width: 80%;
+}
+
+/* Estilo dinámico para el ID */
+.bio-id {
+  font-size: 1.5rem; /* Aumentamos ligeramente el tamaño del ID */
+  color: white;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+
+.bio-id:hover::after {
+  width: 60%;
+}
+
+/* Contenedor de texto sobre mí */
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 15px; /* Bordes redondeados para el contenedor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar el contenedor */
+  color: white; /* Aseguramos que el texto sea blanco por defecto */
+}
+
+/* Imagen de perfil redonda */
+.rounded-picture {
+  width: 300px; /* Aumentamos el tamaño de la imagen */
+  height: 300px; /* Aumentamos el tamaño de la imagen */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333; /* Borde suave y oscuro */
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.rounded-picture:hover {
+  transform: scale(1.05);
+  border-color: #6a1b9a; /* Cambiar el borde al hacer hover */
+}
+
+/* Contenedor de texto sobre mí con fondo transparente */
+.about-me-content {
+  width: 80%;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 20px;
+  background-color: rgba(68, 68, 68, 0.3); /* Fondo gris oscuro con más transparencia */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.about-me-content p {
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Color de texto suave pero claro */
+}
+
+.education-section {
+  width: 80%;
+  margin: 50px auto;
+  background-color: rgba(68, 68, 68, 0.1); /* Fondo casi transparente */
+  padding: 20px;
+  border-radius: 12px; /* Bordes ligeramente redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #333; /* Texto oscuro para contraste */
+}
+
+
+.section-title {
+  font-size: 28px;
+}
+/* Línea de tiempo */
+.timeline {
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: #e0e0e0;
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
+
+/* Elementos de la línea de tiempo */
+.timeline-item {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #3f51b5;
+  border-radius: 50%;
+  z-index: 3;
+  border: 3px solid #fff;
+}
+
+.icon-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.timeline-item .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #7b1fa2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.icon img {
+  max-width: 60%;
+  max-height: 60%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.icon img:hover {
+  transform: scale(1.2);
+}
+
+.box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  width: 150px;
+}
+
+.year {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Un tono gris elegante */
+}
+

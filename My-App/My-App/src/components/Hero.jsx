@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import dolisyImage from "./img/dolisy.jpg";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import dolisyImage from "./img/dolisyy.png";
+
+
 
 const Hero = () => {
   return (
@@ -9,19 +11,21 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            Hello, I'm
+            <span className="purple-text bold-text">Hello</span>, I'm
             <br />
             <span className="hero-name">DOLISY YURNI</span>
           </h1>
-          <p className="hero-subtitle">A Computer Science Student</p>
+          <p className="hero-subtitle">
+            Yap, a <span className="purple-text bold-text">Computer Science</span> Student
+          </p>
+
           <p className="hero-description">
-            A passionate Computer Science major at IPB Indonesia, focused on
-            creating innovative and user-friendly solutions.
+          I am an undergraduate student at IPB University, Indonesia, pursuing a degree in Computer Science. 
+          Passionate in several key areas of technology, including web development, cybersecurity, and machine learning or artificial intelligence.
           </p>
           <p className="hero-description">
-            I'm a developer with a strong interest in building impactful
-            projects using the latest technologies. I love to collaborate and
-            solve real-world problems through code.
+          Explored new opportunities and pushing my boundaries, 
+          which led me to pursue higher education in one of the most innovative fields today—technology.
           </p>
 
           <div className="hero-buttons">
@@ -32,7 +36,7 @@ const Hero = () => {
               My Projects
             </a>
 
-            
+
           </div>
 
         </div>
@@ -40,19 +44,18 @@ const Hero = () => {
 
 
 
-        <div className="hero-image">
+        <div className="hero-image-container">
           <img src={dolisyImage} alt="Dolisy Yurni" className="profile-photo" />
 
           <div className="hero-spotify-buttons">
-          <div class="hero-spotify-buttons">
-        <a href="https://www.spotify.com" target="_blank">Escuchar en Spotify</a>
-    </div>
-
+            <div className="hero-spotify-buttons">
+              <a href="https://open.spotify.com/playlist/4mNaDuji6cZuqeHXpSn0bg?si=Ab_EF5BlSPSr7wzOgQHKoQ&pi=-aNNtxvkSYGcP " target="_blank" rel="noopener noreferrer">Vibing</a>
+            </div>
           </div>
         </div>
         <div className="social-links">
           <a
-            href="https://github.com/dolisy"
+            href="https://github.com/dolisyyurni"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -60,7 +63,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/dolisy"
+            href="https://ipb.link/linkedin-dolisy"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -68,12 +71,12 @@ const Hero = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/dolisy"
+            href="https://instagram.com/dolisyuu"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         </div>
       </div>
