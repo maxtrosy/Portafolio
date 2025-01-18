@@ -77,3 +77,35 @@ body {
 
   /* Otros ajustes para móviles */
 }
+.gradient-effect {
+  width: 100%;
+  height: 100vh; /* Esto ocupa toda la pantalla */
+  background: linear-gradient(45deg, rgba(138, 43, 226, 0.7), rgba(138, 43, 226, 0.2)); /* Gradiente inicial */
+  transition: background 0.1s ease; /* Transición para suavizar el cambio */
+  position: relative; /* Necesario para poder posicionar el gradiente */
+}
+
+/* Este contenedor se usará para la capa que sigue al cursor */
+.gradient-layer {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none; /* Para que no interfiera con el clic */
+  background: rgba(138, 43, 226, 0.8); /* Color del gradiente morado */
+  transform: translate(-50%, -50%); /* Para centrar el punto del gradiente respecto al mouse */
+}
+/* Estilos para el círculo del cursor con un gradiente interior a exterior */
+/* Estilos para el círculo del cursor con bordes difuminados */
+.cursor-circle {
+  position: absolute;
+  width: 500px; /* Tamaño del círculo */
+  height: 500px; /* Tamaño del círculo */
+  border-radius: 50%; /* Forma circular */
+  pointer-events: none; /* Asegura que el círculo no interfiera con la interacción del usuario */
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, rgba(138, 43, 226, 0) 80%); /* Gradiente de adentro hacia afuera */
+  transform: translate(-50%, -50%); /* Centra el círculo en la punta del cursor */
+  transition: transform 1000s ease; /* Suaviza el movimiento */
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.1); /* Sombra difusa alrededor del círculo */
+  z-index: 1000; /* Asegura que el círculo esté por encima de otros elementos */
+}

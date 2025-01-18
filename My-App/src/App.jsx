@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -18,16 +18,40 @@ function App() {
     circle.className = "cursor-circle";
     document.body.appendChild(circle);
 
-    const updateCirclePosition = (e) => {
-      const { clientX, clientY } = e;
-      circle.style.left = `${clientX - circle.offsetWidth / 2}px`;
-      circle.style.top = `${clientY - circle.offsetHeight / 2}px`;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    const speed = 0.06; // Controla la velocidad de seguimiento
+
+    const updateCirclePosition = () => {
+      const distX = targetX - currentX;
+      const distY = targetY - currentY;
+
+      // Actualizar la posición actual suavemente
+      currentX += distX * speed;
+      currentY += distY * speed;
+
+      circle.style.left = `${currentX}px`;
+      circle.style.top = `${currentY}px`;
+
+      // Llamar a la siguiente actualización
+      requestAnimationFrame(updateCirclePosition);
     };
 
-    window.addEventListener("mousemove", updateCirclePosition);
+    const handleMouseMove = (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    };
 
+    window.addEventListener("mousemove", handleMouseMove);
+
+    // Iniciar la animación
+    updateCirclePosition();
+
+    // Limpieza
     return () => {
-      window.removeEventListener("mousemove", updateCirclePosition);
+      window.removeEventListener("mousemove", handleMouseMove);
       document.body.removeChild(circle);
     };
   }, []);
@@ -43,7 +67,7 @@ function App() {
     padding: 0,
   };
 
-  // Hook personalizado para obtener la ubicación actual
+  // Hook to display Hero component only on the home page
   const ShowHero = () => {
     const location = useLocation();
     return location.pathname === "/" ? <Hero /> : null;
