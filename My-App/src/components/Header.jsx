@@ -74,32 +74,8 @@ const Header = () => {
       >
         <FaBars />
       </div>
-      {menuVisible && (
-        <div
-          className="dropdown-menu"
-          ref={menuRef}
-          id="dropdown-menu"
-          aria-live="polite"
-        >
-          <ul>
-            <li>
-              <Link to="/home" onClick={() => setMenuVisible(false)}></Link>
-            </li>
-            <li>
-              <Link to="/aboutme" onClick={() => setMenuVisible(false)}>About Me</Link>
-            </li>
-            <li>
-              <Link to="/portfolio" onClick={() => setMenuVisible(false)}>Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/blog" onClick={() => setMenuVisible(false)}>Blog</Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => setMenuVisible(false)}>Contact</Link>
-            </li>
-          </ul>
-        </div>
-      )}
+      
+    
     </header>
   );
 };

@@ -1,34 +1,57 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import { init, send } from "emailjs-com";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
+
+  // Inicializa EmailJS con tu Public Key
+  init("ZuOK4LvDo0f2WhcST");  // Aquí es donde usas la Public Key
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario, como una API o correo
-    console.log('Formulario enviado:', formData);
+
+    // Configura los parámetros del correo
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+    // Envía el correo a tu dirección con EmailJS
+    send("service_g743mtc", "template_jb7a1me", emailParams)
+      .then((response) => {
+        console.log("Correo enviado exitosamente:", response);
+        alert("¡Tu mensaje ha sido enviado!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        }); // Limpia el formulario
+      })
+      .catch((error) => {
+        console.error("Error al enviar el correo:", error);
+        alert("Hubo un error al enviar el mensaje, por favor inténtalo nuevamente.");
+      });
   };
 
   return (
     <div className="contact-container">
-      {/* Título FIND ME ON */}
       <h2 className="contact-title">FIND ME ON</h2>
-
-      {/* Íconos de redes sociales */}
       <div className="social-icons">
+        {/* Redes sociales */}
         <a href="https://line.me/ti/p/GrKcxyc5qX" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-line"></i>
         </a>
@@ -40,12 +63,10 @@ const Contact = () => {
         </a>
       </div>
 
-      {/* Texto invitando a contactar */}
       <p className="contact-text">
         If you want to get in touch with me, feel free to send a message. I’d love to hear from you!
       </p>
 
-      {/* Formulario de contacto */}
       <form className="contact-form" onSubmit={handleSubmit}>
         <h3 className="form-title">Contact Me</h3>
 
@@ -87,7 +108,9 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className="submit-button">
+          Send Message
+        </button>
       </form>
     </div>
   );

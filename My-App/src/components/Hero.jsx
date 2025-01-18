@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Hero.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import dolisyImage from "./img/dolisyy.png";
@@ -7,6 +8,7 @@ import dolisyImage from "./img/dolisyy.png";
 
 const Hero = () => {
   return (
+
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
@@ -20,21 +22,22 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-          I am an undergraduate student at IPB University, Indonesia, pursuing a degree in Computer Science. 
-          Passionate in several key areas of technology, including web development, cybersecurity, and machine learning or artificial intelligence.
+            I am an undergraduate student at IPB University, Indonesia, pursuing a degree in Computer Science.
+            Passionate in several key areas of technology, including web development, cybersecurity, and machine learning or artificial intelligence.
           </p>
           <p className="hero-description">
-          Explored new opportunities and pushing my boundaries, 
-          which led me to pursue higher education in one of the most innovative fields today—technology.
+            Explored new opportunities and pushing my boundaries,
+            which led me to pursue higher education in one of the most innovative fields today—technology.
           </p>
 
           <div className="hero-buttons">
-            <a href="#about" className="hero-button">
+            <a href="/aboutme" className="hero-button">
               Learn More
             </a>
-            <a href="#projects" className="hero-button">
+            <a href="/portfolio" className="hero-button">
               My Projects
             </a>
+
 
 
           </div>

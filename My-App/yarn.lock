@@ -1170,6 +1170,11 @@ element-resize-event@^2.0.4:
   resolved "https://registry.npmjs.org/element-resize-event/-/element-resize-event-2.0.9.tgz"
   integrity sha512-xiv2qfGeuMfXjxcAd0if4tR7xiqEH4dXkGFAfF7O4nC960JteYrJlbO00PWX1r9J2rxtqs0TdfXe/dH9J8kEZQ==
 
+emailjs-com@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  integrity sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==
+
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.4"
   resolved "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz"
