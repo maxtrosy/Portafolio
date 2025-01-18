@@ -1,0 +1,124 @@
+.certifications-section {
+    width: 75vw; /* 80% del ancho de la ventana del navegador */
+    margin: 60px auto;
+    background-color: rgba(68, 68, 68, 0.12);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: box-shadow 0.4s ease-in-out, background-color 0.3s ease;
+  }
+  
+  .certifications-section:hover {
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+    background-color: rgba(68, 68, 68, 0.18);
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #9c27b0;
+    margin: 15px auto 0;
+    transition: width 0.5s ease-out;
+  }
+  
+  .section-title:hover::after {
+    width: 90%;
+  }
+  
+  .section-description {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ddd;
+    font-weight: 300;
+  }
+  
+  .certifications-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas siempre */
+    gap: 15px; /* Reducido el espacio entre elementos */
+    justify-items: center;
+  }
+  
+  .certification-item {
+    width: 100%; /* Se adapta al ancho de la columna */
+    max-width: 360px; /* Más ancho que antes */
+    height: 270px; /* Ajustado para ser proporcional al nuevo ancho */
+    background-image: url('https://www.pexels.com/photo/black-and-white-building-photography-775797/'); /* Agrega la URL de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra el recuadro */
+    background-position: center; /* Centra la imagen dentro del recuadro */
+    background-repeat: no-repeat; /* No repite la imagen */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Asegura que el texto sea legible sobre la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .certification-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro y semitransparente */
+    border-radius: 12px;
+    z-index: 1; /* Asegura que el fondo oscuro esté detrás del texto */
+  }
+  
+  .certification-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .certification-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff; /* Asegura que el título sea blanco y visible sobre el fondo oscuro */
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 2; /* Hace que el texto esté por encima del fondo oscuro */
+  }
+  
+  .certification-item p {
+    font-size: 1.2rem;
+    color: #fff; /* Asegura que el texto sea blanco y visible sobre el fondo oscuro */
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    z-index: 2; /* Hace que el texto esté por encima del fondo oscuro */
+  }
+  
+  a.certification-item {
+    text-decoration: none; /* Quita subrayado del enlace */
+    color: inherit; /* Usa el color actual del texto */
+  }
+  
+  @media (max-width: 768px) {
+    .certifications-list {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+  }
+  

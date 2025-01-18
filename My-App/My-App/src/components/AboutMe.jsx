@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './AboutMe.css';
 import catImage from './img/doli bulet.png'; // Imagen del perfil
 import Timeline from './Timeline';
+import CertificationsSection from './CertificationsSection';
+
 
 // Importando los íconos desde React Icons
 import { FaGraduationCap, FaBuilding, FaUniversity, FaChalkboardTeacher, FaFlagCheckered } from 'react-icons/fa'; // Íconos de educación
@@ -80,41 +82,11 @@ const AboutMe = () => {
       </div>
 
       <div className="education-section">
-        <h2 className="section-title">Education</h2>
-        <p className="section-description">
-          A journey of knowledge and achievement through the years.
-        </p>
         <Timeline />
-
-
-
       </div>
-      {/* Sección de certificaciones */}
-      <div className="certifications-section">
-        <h2 className="section-title">Certifications</h2>
-        <p className="section-description">
-          Highlights of my professional certifications and achievements.
-        </p>
-        <div className="certifications-list">
-          <div className="certification-item">
-            <h3>Google Data Analytics</h3>
-            <p>Issued by: Google</p>
-            <p>Year: 2023</p>
-          </div>
-          <div className="certification-item">
-            <h3>Microsoft Azure Fundamentals</h3>
-            <p>Issued by: Microsoft</p>
-            <p>Year: 2022</p>
-          </div>
-          <div className="certification-item">
-            <h3>Certified Scrum Master</h3>
-            <p>Issued by: Scrum Alliance</p>
-            <p>Year: 2021</p>
-          </div>
-        </div>
+      <div>
+        <CertificationsSection />
       </div>
-
-
     </div>
   );
 };
