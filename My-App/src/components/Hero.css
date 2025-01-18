@@ -314,27 +314,69 @@ header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 10px;
     }
 
     .hero-text {
         max-width: 90%;
-        /* Ampliamos el ancho en dispositivos móviles */
         margin-bottom: 20px;
     }
 
-    .hero-image {
-        max-width: 80%;
-        position: static;
-        /* Para que la imagen se muestre de manera estática en móviles */
-        margin-top: 0px;
-        width: 200px;
-        height: 200px;
+    .hero-title {
+        font-size: 28px; /* Reducir el tamaño del título */
+    }
+
+    .hero-name {
+        font-size: 36px; /* Reducir el tamaño del nombre */
+    }
+
+    .hero-subtitle {
+        font-size: 16px; /* Reducir el tamaño del subtítulo */
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-button {
+        width: 80%; /* Asegura que los botones se adapten */
+        margin-bottom: 10px;
     }
 
     .profile-photo {
-        width: 100%;
-        height: 100%;
-        border-radius: 20%;
-        /* Bordes redondeados para la imagen */
+        width: 80%; /* Imagen más pequeña */
+        height: auto;
+        border-radius: 20%; /* Bordes redondeados */
+        margin-bottom: 20px; /* Espacio entre la imagen y los botones */
+    }
+
+    .hero-spotify-buttons a {
+        width: 80%; /* Ajusta el ancho del botón */
+        text-align: center; /* Centra el texto dentro del botón */
+        margin-bottom: 10px; /* Añadir margen entre el botón y los iconos */
+    }
+
+    .social-links {
+        position: static;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        display: none; /* Ocultar la imagen de fondo en móviles */
     }
 }

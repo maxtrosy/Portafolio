@@ -40,3 +40,40 @@ body {
 ::-webkit-scrollbar-corner {
   background: transparent; /* Para la esquina de la barra de desplazamiento */
 }
+/* Estilos específicos para Tablets */
+@media (max-width: 1024px) {
+  /* Ajustes de texto para tablets */
+  .hero-title {
+      font-size: 7vw; /* Aumentamos el tamaño de la fuente en tabletas */
+  }
+
+  .hero-description {
+      font-size: 16px; /* Ajustamos el tamaño de la descripción */
+  }
+
+  .profile-photo {
+      max-width: 50vw; /* Imagen más pequeña para pantallas de tabletas */
+      height: 300px; /* Ajustamos la altura */
+  }
+
+  /* Otros ajustes para tablets */
+}
+
+/* Estilos específicos para Móviles */
+@media (max-width: 767px) {
+  /* Ajustes de texto para móviles */
+  .hero-title {
+      font-size: 10vw; /* Aumentamos aún más el tamaño de la fuente en móviles */
+  }
+
+  .hero-description {
+      font-size: 14px; /* Ajustamos aún más la descripción */
+  }
+
+  .profile-photo {
+      max-width: 70vw; /* Imagen más pequeña para móviles */
+      height: 250px;
+  }
+
+  /* Otros ajustes para móviles */
+}

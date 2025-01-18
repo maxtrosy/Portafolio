@@ -56,15 +56,25 @@ header.scrolled {
 }
 
 /* Iconos de las aplicaciones (rediseñar el contenedor de la nav) */
+nav {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  align-items: center; /* Centra los elementos en el eje vertical */
   gap: 20px;
-  margin-right: 50px;
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el relleno por defecto */
   animation: fadeInUp 1.5s ease-out; /* Animación de entrada */
 }
 
 nav ul li {
+ 
   margin-top: 20px;
   color: white;
 }

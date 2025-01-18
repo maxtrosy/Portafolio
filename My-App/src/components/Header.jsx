@@ -44,7 +44,6 @@ const Header = () => {
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo">MyLogo</div>
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <ul>
           <li>
@@ -64,16 +63,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div
-        className="hamburger-icon"
-        ref={hamburgerRef}
-        onClick={toggleMenu}
-        aria-expanded={menuVisible}
-        aria-controls="dropdown-menu"
-        aria-label="Toggle menu"
-      >
-        <FaBars />
-      </div>
+      
       
     
     </header>
