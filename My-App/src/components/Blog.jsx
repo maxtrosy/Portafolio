@@ -15,7 +15,7 @@ const Blog = () => {
     {
       title: "Lokasena",
       text: "Exploring the culture of the archipelago as well as batik ladle workshops and making clay crafts.",
-      image: "src/components/img/lokasena.jpg",
+      image: "src/components/img/loasema.jpg",
       expandedText:
         "Participating in Lokasena, an initiative that explores the rich cultural heritage of the Indonesian culture through batik workshops and clay craftmaking, offers a multifaceted learning experience. Develop practical skills in traditional art forms, such as creating intricate batik designs using wax-resist dyeing techniques and crafting functional or decorative items from clay. Furthermore, gain a deeper understanding of Indonesia’s diverse cultural history, artistic expressions, and the significance of these crafts in local traditions and communities. This hands-on engagement fosters creativity, cultural appreciation, and an awareness of the importance of preserving intangible cultural heritage.",
     },
@@ -29,7 +29,7 @@ const Blog = () => {
     {
       title: "Puncak Bogor",
       text: "Class bonding and farewell party for medical students at Puncak Bogor.",
-      image: "src/components/img/puncak.jpg",
+      image: "src/components/img/punak.jpg",
       expandedText:
         "Attending a class bonding and farewell party for medical students at Puncak Bogor offers a unique opportunity to strengthen interpersonal connections and foster a sense of camaraderie among peers. Through collaborative activities and informal interactions, build up teamwork, communication, and social skills that are essential for professional and personal growth. Moreover, this activity provides a platform to reflect on shared experiences, celebrate achievements, and build lasting memories in a serene and inspiring environment. Such gatherings can also enhance emotional well-being and reinforce a supportive network crucial for navigating future challenges in the medical field.",
     },
