@@ -2,110 +2,102 @@
 
 /* Fondo global */
 body {
-  background-image: url('./components/bg.jpg'); /* Ruta relativa desde el archivo CSS */
-  background-size: cover; /* La imagen cubrirá todo el fondo */
-  background-repeat: no-repeat; /* No repetirá la imagen */
-  background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
-  background-position: center; /* Centra la imagen */
-  margin: 0; /* Elimina márgenes del body */
-  padding: 0; /* Elimina padding del body */
-  font-family: Arial, sans-serif; /* Fuente por defecto */
+  background-image: url('./components/bg.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center; 
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, sans-serif;
 }
 
-/* Círculo de luz estilo linterna */
 
-
-/* Personalización de la barra de desplazamiento para toda la página */
 ::-webkit-scrollbar {
-  width: 8px; /* Ancho de la barra de desplazamiento */
-  height: 8px; /* Altura de la barra horizontal (si es necesario) */
+  width: 8px; 
+  height: 8px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Fondo de la pista de la barra */
+  background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8a2be2; /* Color del "dedo" o el "thumb" */
-  border-radius: 20px; /* Bordes redondeados */
-  border: 3px solid transparent; /* Borde para que no se vea un borde exterior */
-  background-clip: content-box; /* Evita que el borde se vea */
-  transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+  background-color: #8a2be2; 
+  border-radius: 20px; 
+  border: 3px solid transparent;
+  background-clip: content-box; 
+  transition: background-color 0.3s ease; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #6a1b9a; /* Color al pasar el mouse sobre el "thumb" */
+  background-color: #6a1b9a;
 }
 
 ::-webkit-scrollbar-corner {
-  background: transparent; /* Para la esquina de la barra de desplazamiento */
+  background: transparent; 
 }
-/* Estilos específicos para Tablets */
+
 @media (max-width: 1024px) {
-  /* Ajustes de texto para tablets */
   .hero-title {
-      font-size: 7vw; /* Aumentamos el tamaño de la fuente en tabletas */
+      font-size: 7vw; 
   }
 
   .hero-description {
-      font-size: 16px; /* Ajustamos el tamaño de la descripción */
+      font-size: 16px; 
   }
 
   .profile-photo {
-      max-width: 50vw; /* Imagen más pequeña para pantallas de tabletas */
-      height: 300px; /* Ajustamos la altura */
+      max-width: 50vw; 
+      height: 300px; 
   }
 
-  /* Otros ajustes para tablets */
 }
 
-/* Estilos específicos para Móviles */
 @media (max-width: 767px) {
-  /* Ajustes de texto para móviles */
   .hero-title {
-      font-size: 10vw; /* Aumentamos aún más el tamaño de la fuente en móviles */
+      font-size: 10vw;
   }
 
   .hero-description {
-      font-size: 14px; /* Ajustamos aún más la descripción */
+      font-size: 14px; 
   }
 
   .profile-photo {
-      max-width: 70vw; /* Imagen más pequeña para móviles */
+      max-width: 70vw; 
       height: 250px;
   }
 
-  /* Otros ajustes para móviles */
+
 }
 .gradient-effect {
   width: 100%;
-  height: 100vh; /* Esto ocupa toda la pantalla */
-  background: linear-gradient(45deg, rgba(138, 43, 226, 0.7), rgba(138, 43, 226, 0.2)); /* Gradiente inicial */
-  transition: background 0.1s ease; /* Transición para suavizar el cambio */
-  position: relative; /* Necesario para poder posicionar el gradiente */
+  height: 100vh; 
+  background: linear-gradient(45deg, rgba(138, 43, 226, 0.7), rgba(138, 43, 226, 0.2)); 
+  transition: background 0.1s ease;
+  position: relative; 
 }
 
-/* Este contenedor se usará para la capa que sigue al cursor */
+
 .gradient-layer {
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  pointer-events: none; /* Para que no interfiera con el clic */
-  background: rgba(138, 43, 226, 0.8); /* Color del gradiente morado */
-  transform: translate(-50%, -50%); /* Para centrar el punto del gradiente respecto al mouse */
+  pointer-events: none; 
+  background: rgba(138, 43, 226, 0.8); 
+  transform: translate(-50%, -50%); 
 }
-/* Estilos para el círculo del cursor con un gradiente interior a exterior */
-/* Estilos para el círculo del cursor con bordes difuminados */
+
 .cursor-circle {
   position: absolute;
-  width: 500px; /* Tamaño del círculo */
-  height: 500px; /* Tamaño del círculo */
-  border-radius: 50%; /* Forma circular */
-  pointer-events: none; /* Asegura que el círculo no interfiera con la interacción del usuario */
-  background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, rgba(138, 43, 226, 0) 80%); /* Gradiente de adentro hacia afuera */
-  transform: translate(-50%, -50%); /* Centra el círculo en la punta del cursor */
-  transition: transform 1000s ease; /* Suaviza el movimiento */
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.1); /* Sombra difusa alrededor del círculo */
-  z-index: 1000; /* Asegura que el círculo esté por encima de otros elementos */
+  width: 500px;
+  height: 500px; 
+  border-radius: 50%; 
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, rgba(138, 43, 226, 0) 80%); 
+  transform: translate(-50%, -50%); 
+  transition: transform 1000s ease; 
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.1);
+  z-index: 1000; 
 }

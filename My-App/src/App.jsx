@@ -22,20 +22,18 @@ function App() {
     let targetY = 0;
     let currentX = 0;
     let currentY = 0;
-    const speed = 0.06; // Controla la velocidad de seguimiento
+    const speed = 0.03; 
 
     const updateCirclePosition = () => {
       const distX = targetX - currentX;
       const distY = targetY - currentY;
 
-      // Actualizar la posición actual suavemente
       currentX += distX * speed;
       currentY += distY * speed;
 
       circle.style.left = `${currentX}px`;
       circle.style.top = `${currentY}px`;
 
-      // Llamar a la siguiente actualización
       requestAnimationFrame(updateCirclePosition);
     };
 
@@ -46,10 +44,8 @@ function App() {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Iniciar la animación
     updateCirclePosition();
 
-    // Limpieza
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       document.body.removeChild(circle);
@@ -67,7 +63,6 @@ function App() {
     padding: 0,
   };
 
-  // Hook to display Hero component only on the home page
   const ShowHero = () => {
     const location = useLocation();
     return location.pathname === "/" ? <Hero /> : null;

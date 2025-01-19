@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import './AboutMe.css';
-import catImage from './img/doli bulet.png'; // Imagen del perfil
+import catImage from './img/doli bulet.png'; 
 import Timeline from './Timeline';
 import CertificationsSection from './CertificationsSection';
 
 
-// Importando los íconos desde React Icons
 import { FaGraduationCap, FaBuilding, FaUniversity, FaChalkboardTeacher, FaFlagCheckered } from 'react-icons/fa'; // Íconos de educación
 
 const AboutMe = () => {
-  const [activeSection, setActiveSection] = useState('tech-stack'); // Estado para controlar qué sección mostrar
+  const [activeSection, setActiveSection] = useState('tech-stack'); 
   const timelineData = [
     {
       year: '2010',
@@ -45,18 +44,18 @@ const AboutMe = () => {
 
   return (
     <div className="about-me-container">
-      {/* Imagen central superior */}
+      {/* central img*/}
       <div className="profile-picture">
         <img src={catImage} alt="Profile" className="rounded-picture" />
       </div>
 
-      {/* Nombre y ID debajo de la foto */}
+      {/* name and id below the pic */}
       <div className="bio-details">
         <h2 className="bio-name">DOLISY FEBRIANI YURNI</h2>
         <p className="bio-id">M0403241081</p>
       </div>
 
-      {/* Contenedor de texto sobre mí */}
+      {/* about me content */}
       <div className="about-me-content">
         <div className="bio-text">
           <p>

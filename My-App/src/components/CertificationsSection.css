@@ -50,28 +50,28 @@
   
   .certifications-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas siempre */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 15px; 
     justify-items: center;
   }
   
   .certification-item {
-    width: 100%; /* Se adapta al ancho de la columna */
-    max-width: 360px; /* Más ancho que antes */
-    height: 270px; /* Ajustado para ser proporcional al nuevo ancho */
-    background-image: url('https://www.pexels.com/photo/black-and-white-building-photography-775797/'); /* Agrega la URL de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra el recuadro */
-    background-position: center; /* Centra la imagen dentro del recuadro */
-    background-repeat: no-repeat; /* No repite la imagen */
+    width: 100%; 
+    max-width: 360px; 
+    height: 270px; 
+    background-image: url('https://www.pexels.com/photo/black-and-white-building-photography-775797/'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    color: #fff; /* Asegura que el texto sea legible sobre la imagen */
+    color: #fff; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     position: relative;
   }
@@ -83,9 +83,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro y semitransparente */
+    background: rgba(0, 0, 0, 0.4); 
     border-radius: 12px;
-    z-index: 1; /* Asegura que el fondo oscuro esté detrás del texto */
+    z-index: 1; 
   }
   
   .certification-item:hover {
@@ -96,29 +96,29 @@
   .certification-item h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #fff; /* Asegura que el título sea blanco y visible sobre el fondo oscuro */
+    color: #fff; 
     text-transform: capitalize;
     text-align: center;
-    z-index: 2; /* Hace que el texto esté por encima del fondo oscuro */
+    z-index: 2; 
   }
   
   .certification-item p {
     font-size: 1.2rem;
-    color: #fff; /* Asegura que el texto sea blanco y visible sobre el fondo oscuro */
+    color: #fff;
     line-height: 1.5;
     text-align: center;
     margin: 0;
-    z-index: 2; /* Hace que el texto esté por encima del fondo oscuro */
+    z-index: 2;
   }
   
   a.certification-item {
-    text-decoration: none; /* Quita subrayado del enlace */
-    color: inherit; /* Usa el color actual del texto */
+    text-decoration: none; 
+    color: inherit; 
   }
   
   @media (max-width: 768px) {
     .certifications-list {
-      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+      grid-template-columns: 1fr; 
     }
   }
   

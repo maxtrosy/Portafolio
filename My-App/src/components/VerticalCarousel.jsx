@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './VerticalCarousel.css'; // Usaremos una hoja de estilos externa para más limpieza
+import './VerticalCarousel.css'; 
 
-// Imágenes de ejemplo
 import poster1 from './img/poster2.png';
 import poster2 from './img/poster3.png';
 import poster3 from './img/poster4.jpg';
@@ -19,26 +18,22 @@ const posters = [
 ];
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(2); // Empezar desde el poster central
+  const [currentIndex, setCurrentIndex] = useState(2); 
 
-  // Función para navegar a la imagen anterior
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + posters.length) % posters.length);
   };
 
-  // Función para navegar a la imagen siguiente
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % posters.length);
   };
 
   return (
     <div className="carousel-container">
-      {/* Botón de navegación izquierda */}
       <button className="carousel-nav prev" onClick={handlePrev}>
         &lt;
       </button>
 
-      {/* Contenedor del carrusel */}
       <div className="carousel">
         {posters.map((poster, index) => {
           const offset = index - currentIndex;
@@ -76,7 +71,6 @@ const Carousel = () => {
         })}
       </div>
 
-      {/* Botón de navegación derecha */}
       <button className="carousel-nav next" onClick={handleNext}>
         &gt;
       </button>

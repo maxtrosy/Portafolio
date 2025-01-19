@@ -4,33 +4,26 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    /* Reducir altura del header */
     transition: background-color 0.3s ease;
     color: white;
-    /* Color blanco para el texto */
     margin-left: 100px;
-    /* Agregar margen izquierdo al header */
 
 }
 
-/* Contenedor del logo y hamburguesa alineados */
+/* logo content */
 .header-logo-hamburger {
     display: flex;
     align-items: center;
-    /* Centra el logo y el icono de la hamburguesa verticalmente */
     gap: 50px;
-    /* Añadir un espacio entre el logo y el botón hamburguesa */
 }
 
 /* Logo */
 .logo {
     font-size: 20px;
-    /* Reducir tamaño del logo */
     font-weight: bold;
     color: white;
 }
 
-/* Icono de la hamburguesa */
 .hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -38,7 +31,6 @@ header {
     cursor: pointer;
 }
 
-/* Icono de la hamburguesa (ajustado) */
 .hamburger-icon svg {
     font-size: 24px;
     color: white;
@@ -57,11 +49,9 @@ header {
     padding: 20px;
     text-align: left;
     animation: fadeInUp 1.5s ease-out;
-    /* Animación de entrada para la sección */
     position: relative;
 
     background-blend-mode: overlay;
-    /* Esto ayudará a mezclar la imagen con el gradiente */
 }
 
 /* Hero content (text and image container) */
@@ -70,35 +60,26 @@ header {
     justify-content: flex-start;
     width: 100%;
     align-items: center;
-    /* Asegura que los elementos estén centrados verticalmente */
     position: relative;
-    /* Necesario para posicionar la imagen dentro de este contenedor */
 }
 
-/* Sección de texto */
+/* text section*/
 .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centra el contenido verticalmente */
     align-items: flex-start;
-    /* Centra el contenido horizontalmente a la izquierda */
     max-width: 40%;
-    /* Reducimos el ancho máximo del texto */
     margin-right: 10%;
-    /* Asegura un espacio a la derecha del texto */
     margin-left: 10%;
-    /* Mueve el texto hacia la izquierda */
     animation: fadeInText 1.5s ease-out;
-    /* Animación de entrada para el texto */
 }
 
-/* Animación de entrada para el texto */
+/*text animation */
 @keyframes fadeInText {
     from {
         opacity: 0;
         transform: translateY(20px);
-        /* Entrada desde abajo */
     }
 
     to {
@@ -107,8 +88,6 @@ header {
     }
 }
 
-/* Título */
-/* Título */
 .hero-title {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -117,64 +96,59 @@ header {
     margin-bottom: 10px;
     margin-top: -70px;
     color: white;
-  }
-  
-  .hero-name {
+}
+
+.hero-name {
     font-size: 48px;
     font-weight: bold;
-    color: #ffffff; /* Un color destacado */
-  }
-  
-  .hero-subtitle {
+    color: #ffffff;/
+}
+
+.hero-subtitle {
     font-size: 18px;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
-  }
-  .purple-text {
-    color: #8a2be2; /* Morado */
-  }
-  
-  .bold-text {
-    font-weight: bold; /* Negrita */
-  }
-  
+}
+
+.purple-text {
+    color: #8a2be2;
+}
+
+.bold-text {
+    font-weight: bold;
+}
 
 
-/* Descripción */
+
 .hero-description {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
     text-align: justify;
-    /* Cambiado a left para alinear el texto a la izquierda */
     animation: fadeInText 1.5s ease-out;
-    /* Animación de entrada para la descripción */
 }
 
-/* Botones */
+/* Buttons */
 .hero-buttons {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    /* Centra los botones horizontalmente */
 }
 
 
-  
-/* Contenedor de la imagen y el botón */
 .hero-image-container {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-    align-items: center; /* Centra la imagen y el botón horizontalmente */
-    justify-content: center; /* Alinea verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Imagen */
+/* Image */
 .profile-photo {
-    max-width: 25vw; /* Ajusta el tamaño de la imagen con un ancho relativo */
-    height: 350px; /* Mantiene la proporción de la imagen */
-    display: block; /* Asegura que la imagen se muestre correctamente */
-    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    max-width: 25vw;
+    height: 350px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Estilos para el botón de Spotify */
@@ -187,16 +161,16 @@ header {
     font-weight: bold;
     border-radius: 12px;
     transition: background-color 0.3s;
-    width: 25vw; /* Hace que el ancho del botón sea el mismo que el de la imagen */
-    text-align: center; /* Centra el texto dentro del botón */
+    width: 25vw;
+    text-align: center;
 }
 
-/* Hover para el botón */
+/* button hover */
 .hero-spotify-buttons a:hover {
     background-color: #6a1b9a;
 }
 
-  
+
 
 .hero-button {
     display: inline-block;
@@ -209,89 +183,77 @@ header {
     margin-right: 10px;
     transition: background-color 0.3s;
     animation: fadeInText 1.5s ease-out;
-    /* Animación de entrada para los botones */
 }
 
 .hero-button:hover {
     background-color: #6a1b9a;
 }
 
-/* Iconos sociales en el lado derecho */
+/* social media icons */
 .social-links {
-    position: fixed; /* Lo posicionamos de manera fija */
-    right: 40px; /* Lo colocamos a la derecha */
-    top: 50%; /* Lo centramos verticalmente */
-    transform: translateY(-50%); /* Ajusta para que esté perfectamente centrado */
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaciado entre los iconos */
-    z-index: 1000; /* Asegura que los iconos estén por encima de otros elementos */
-    opacity: 1; /* Los iconos ya están visibles */
+    gap: 15px;
+    z-index: 1000;
+    opacity: 1;
 }
 
-/* Estilo de los iconos sociales */
+/* icon styles */
 .social-icon {
     font-size: 24px;
     color: white;
     transition: color 0.3s;
-    opacity: 0; /* Inicialmente invisibles */
-    animation: fadeInIcons 1.5s ease-out forwards; /* Aplicamos la animación */
+    opacity: 0;
+    animation: fadeInIcons 1.5s ease-out forwards;
 }
 
-/* Estilo para los iconos al pasar el mouse */
+/*icon hover*/
 .social-icon:hover {
-    color: #8a2be2; /* Cambia a morado al hacer hover */
-} /* Cambia a morado al hacer hover */
+    color: #8a2be2;
+}
 
 @keyframes fadeInIcons {
     from {
         opacity: 0;
-        transform: translateY(50px); /* Los iconos entran desde abajo */
+        transform: translateY(50px);
+       
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Estilo para la imagen con borde y gradiente */
 .hero-image {
     position: absolute;
-    /* La posicionamos de manera absoluta */
     left: 75%;
-    /* 75% del ancho de la pantalla */
     top: 50%;
-    /* Centrado verticalmente */
     transform: translateX(-50%) translateY(-50%);
-    /* Desplaza el centro de la imagen al 75% del ancho */
     width: 25vw;
-    /* Definir el ancho en unidades relativas a la ventana */
     height: 25vw;
-    /* Definir el alto en unidades relativas a la ventana */
     background-image: none;
-    /* Eliminar el gradiente */
     display: flex;
     justify-content: center;
     opacity: 0.3;
-    /* Establecer opacidad del 30% para la imagen */
     animation: fadeInImage 1.5s ease-out forwards;
-    /* Animación de entrada para la imagen */
     margin-top: -60px;
 }
 
-/* Animación de entrada para la imagen */
+/* pic animation */
 @keyframes fadeInImage {
     from {
         opacity: 0;
         transform: translateX(-50%) translateY(-50%) scale(0.8);
-        /* Comienza pequeño */
     }
 
     to {
         opacity: 0.9;
-        /* Establece la opacidad al 30% */
         transform: translateX(-50%) translateY(-50%) scale(1);
-        /* Finaliza al tamaño original */
     }
 }
 
@@ -299,7 +261,7 @@ header {
     from {
         opacity: 0;
         transform: translateY(20px);
-        /* Los iconos entran desde abajo */
+
     }
 
     to {
@@ -308,7 +270,7 @@ header {
     }
 }
 
-/* Estilos para dispositivos móviles */
+/* responsive */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
@@ -323,15 +285,15 @@ header {
     }
 
     .hero-title {
-        font-size: 28px; /* Reducir el tamaño del título */
+        font-size: 28px;
     }
 
     .hero-name {
-        font-size: 36px; /* Reducir el tamaño del nombre */
+        font-size: 36px;
     }
 
     .hero-subtitle {
-        font-size: 16px; /* Reducir el tamaño del subtítulo */
+        font-size: 16px;
     }
 
     .hero-description {
@@ -347,21 +309,21 @@ header {
     }
 
     .hero-button {
-        width: 80%; /* Asegura que los botones se adapten */
+        width: 80%;
         margin-bottom: 10px;
     }
 
     .profile-photo {
-        width: 80%; /* Imagen más pequeña */
+        width: 80%;
         height: auto;
-        border-radius: 20%; /* Bordes redondeados */
-        margin-bottom: 20px; /* Espacio entre la imagen y los botones */
+        border-radius: 20%;
+        margin-bottom: 20px;
     }
 
     .hero-spotify-buttons a {
-        width: 80%; /* Ajusta el ancho del botón */
-        text-align: center; /* Centra el texto dentro del botón */
-        margin-bottom: 10px; /* Añadir margen entre el botón y los iconos */
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .social-links {
@@ -377,6 +339,6 @@ header {
     }
 
     .hero-image {
-        display: none; /* Ocultar la imagen de fondo en móviles */
+        display: none;
     }
 }

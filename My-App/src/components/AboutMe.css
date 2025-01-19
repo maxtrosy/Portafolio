@@ -1,12 +1,12 @@
-/* Estilos adicionales para el nombre y el ID */
+/* Additional styles for name and ID */
 .bio-details {
   text-align: center;
   margin-top: 20px;
 }
 
-/* Título del nombre con animación */
+/* Name title with animation */
 .bio-name {
-  font-size: 3.2rem; /* Aumentamos el tamaño del nombre */
+  font-size: 3.2rem; /* Increased the size of the name */
   font-weight: bold;
   text-transform: uppercase;
   color: white;
@@ -28,111 +28,110 @@
   width: 80%;
 }
 
-/* Estilo dinámico para el ID */
+/* Dynamic style for the ID */
 .bio-id {
-  font-size: 1.5rem; /* Aumentamos ligeramente el tamaño del ID */
+  font-size: 1.5rem; /* Slightly increased the size of the ID */
   color: white;
   margin-bottom: 30px;
   position: relative;
 }
 
-
-
 .bio-id:hover::after {
   width: 60%;
 }
 
-/* Contenedor de texto sobre mí */
+/* About me text container */
 .about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  border-radius: 15px; /* Bordes redondeados para el contenedor */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar el contenedor */
-  color: white; /* Aseguramos que el texto sea blanco por defecto */
+  border-radius: 15px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow to highlight the container */
+  color: white; /* Ensures the text is white by default */
 }
 
-/* Imagen de perfil redonda */
+/* Round profile picture */
 .rounded-picture {
-  width: 300px; /* Aumentamos el tamaño de la imagen */
-  height: 300px; /* Aumentamos el tamaño de la imagen */
+  width: 300px; /* Increased the image size */
+  height: 300px; /* Increased the image size */
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #333; /* Borde suave y oscuro */
+  border: 4px solid #333; /* Soft dark border */
   transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .rounded-picture:hover {
   transform: scale(1.05);
-  border-color: #6a1b9a; /* Cambiar el borde al hacer hover */
+  border-color: #6a1b9a; /* Change border color on hover */
 }
 
-/* Contenedor de texto sobre mí con fondo transparente */
+/* About me text container with transparent background */
 .about-me-content {
   width: 80%;
   text-align: justify;
   font-size: 1.2rem;
   line-height: 1.8;
   margin-top: 20px;
-  background-color: rgba(68, 68, 68, 0.3); /* Fondo gris oscuro con más transparencia */
+  background-color: rgba(68, 68, 68, 0.3); /* Dark gray background with more transparency */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More intense shadow */
 }
 
 .about-me-content p {
   margin-bottom: 20px;
-  color: #e0e0e0; /* Color de texto suave pero claro */
+  color: #e0e0e0; /* Soft but clear text color */
 }
 
+/* Education section */
 .education-section {
   width: 80%;
   margin: 50px auto;
-  background-color: rgba(68, 68, 68, 0.1); /* Fondo casi transparente */
+  background-color: rgba(68, 68, 68, 0.1); /* Almost transparent background */
   padding: 20px;
-  border-radius: 12px; /* Bordes ligeramente redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  color: #333; /* Texto oscuro para contraste */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #333; /* Dark text for contrast */
 }
-
 
 .section-title {
   font-size: 28px;
 }
-/* Línea de tiempo */
+
+/* Timeline */
 .timeline {
-    width: 100%;
-    padding: 20px 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: #e0e0e0;
-    transform: translateY(-50%);
-    border-radius: 3px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #e0e0e0;
+  transform: translateY(-50%);
+  border-radius: 3px;
 }
 
-/* Elementos de la línea de tiempo */
+/* Timeline items */
 .timeline-item {
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0 20px;
 }
 
 .timeline-item::before {
@@ -195,6 +194,5 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
-  color: #ffffff; /* Un tono gris elegante */
+  color: #ffffff; /* A stylish gray tone */
 }
-

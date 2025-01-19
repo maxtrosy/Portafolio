@@ -9,8 +9,7 @@ const Contact = () => {
     message: "",
   });
 
-  // Inicializa EmailJS con tu Public Key
-  init("ZuOK4LvDo0f2WhcST");  // Aquí es donde usas la Public Key
+  init("ZuOK4LvDo0f2WhcST"); 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -23,14 +22,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Configura los parámetros del correo
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
     };
 
-    // Envía el correo a tu dirección con EmailJS
     send("service_g743mtc", "template_jb7a1me", emailParams)
       .then((response) => {
         console.log("Correo enviado exitosamente:", response);
@@ -39,7 +36,7 @@ const Contact = () => {
           name: "",
           email: "",
           message: "",
-        }); // Limpia el formulario
+        }); 
       })
       .catch((error) => {
         console.error("Error al enviar el correo:", error);
@@ -51,7 +48,7 @@ const Contact = () => {
     <div className="contact-container">
       <h2 className="contact-title">FIND ME ON</h2>
       <div className="social-icons">
-        {/* Redes sociales */}
+       
         <a href="https://line.me/ti/p/GrKcxyc5qX" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-line"></i>
         </a>

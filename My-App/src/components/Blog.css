@@ -1,4 +1,3 @@
-/* General Container */
 .blog-container {
   padding: 50px;
   font-family: "Arial", sans-serif;
@@ -23,15 +22,15 @@
 .blog-title::after {
   content: '';
   display: block;
-  width: 50%; /* Tamaño inicial del decorador */
-  height: 4px; /* Grosor de la línea */
+  width: 50%; 
+  height: 4px; 
   background-color: white;
-  margin: 10px auto 0; /* Espaciado debajo del título */
-  transition: width 0.3s ease; /* Animación suave al pasar el cursor */
+  margin: 10px auto 0; 
+  transition: width 0.3s ease;
 }
 
 .blog-title:hover::after {
-  width: 80%; /* Aumenta el ancho al pasar el cursor */
+  width: 80%; 
 }
 
 
@@ -46,7 +45,7 @@
 
 /* Individual Cards */
 .card {
-  background-color: #f3e5f5; /* Morado pastel suave */
+  background-color: #f3e5f5; 
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

@@ -1,11 +1,11 @@
-/* Contenedor principal de Contacto */
+/* main content*/
 .contact-container {
   padding: 50px;
   color: white;
   text-align: center;
 }
 
-/* Título "FIND ME ON" */
+/* find me on title" */
 .contact-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -19,19 +19,19 @@
 .contact-title::after {
   content: '';
   display: block;
-  width: 10%; /* Tamaño inicial del decorador */
-  height: 3px; /* Grosor de la línea */
+  width: 10%;
+  height: 3px; 
   background-color: white;
-  margin: 10px auto 0; /* Espaciado debajo del título */
-  transition: width 0.3s ease; /* Animación suave al pasar el cursor */
+  margin: 10px auto 0; 
+  transition: width 0.3s ease; 
 }
 
 .contact-title:hover::after {
-  width:50%; /* Aumenta el ancho al pasar el cursor */
+  width:50%; 
 }
 
 
-/* Íconos de redes sociales */
+/* social media icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -40,27 +40,27 @@
 }
 
 .social-links {
-    position: fixed; /* Lo posicionamos de manera fija */
-    right: 40px; /* Lo colocamos a la derecha */
-    top: 50%; /* Lo centramos verticalmente */
-    transform: translateY(-50%); /* Ajusta para que esté perfectamente centrado */
+    position: fixed; 
+    right: 40px; 
+    top: 50%; 
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaciado entre los iconos */
-    z-index: 1000; /* Asegura que los iconos estén por encima de otros elementos */
-    opacity: 1; /* Los iconos ya están visibles */
+    gap: 15px; 
+    z-index: 1000; 
+    opacity: 1;
 }
 
 
 
-/* Texto de contacto */
+/* contact text */
 .contact-text {
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #ccc;
 }
 
-/* Formulario de contacto */
+/* contact form*/
 .contact-form {
   background-color: rgba(68, 68, 68, 0.2);
   padding: 30px;
@@ -102,7 +102,7 @@
   border: 2px solid #6a1b9a;
 }
 
-/* Botón de envío */
+
 .submit-button {
   padding: 12px 24px;
   background-color: #6a1b9a;
@@ -118,7 +118,7 @@
   background-color: #7b1fa2;
 }
 
-/* Responsividad */
+/* Responsive */
 @media (max-width: 768px) {
   .contact-form {
     width: 100%;

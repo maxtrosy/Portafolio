@@ -8,13 +8,12 @@ const LoadingScreen = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // La carga dura 3 segundos
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    // Evento de movimiento del ratón
     const handleMouseMove = (e) => {
       if (containerRef.current) {
         const { clientX, clientY } = e;
@@ -22,7 +21,6 @@ const LoadingScreen = () => {
       }
     };
 
-    // Escuchar el movimiento del ratón
     document.addEventListener('mousemove', handleMouseMove);
     
     return () => document.removeEventListener('mousemove', handleMouseMove);

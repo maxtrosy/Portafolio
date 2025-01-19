@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Header.css'; // Asegúrate de que el archivo CSS esté en la misma carpeta
-import { FaBars } from 'react-icons/fa'; // Importar el ícono de hamburguesa
+import './Header.css'; 
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
