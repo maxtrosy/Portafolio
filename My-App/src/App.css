@@ -1,17 +1,15 @@
-/* App.css */
-
-/* Fondo global */
 body {
-  background-image: url('./components/bg.jpg'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  background-image: url('./assets/bgq.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
-  margin: 0; 
-  padding: 0; 
+  background-position: center;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  position: relative; 
+  z-index: 0; 
 }
-
 
 ::-webkit-scrollbar {
   width: 8px; 
@@ -89,15 +87,53 @@ body {
   transform: translate(-50%, -50%); 
 }
 
+.background-layer {
+  position: relative;
+  z-index: -2; 
+}
+
+#root-content {
+  position: relative;
+  z-index: 1; 
+}
+
 .cursor-circle {
-  position: absolute;
+  position: fixed; 
   width: 500px;
-  height: 500px; 
-  border-radius: 50%; 
-  pointer-events: none;
-  background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, rgba(138, 43, 226, 0) 80%); 
-  transform: translate(-50%, -50%); 
-  transition: transform 1000s ease; 
+  height: 500px;
+  border-radius: 50%;
+  pointer-events: none; 
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.5) 0%, rgba(138, 43, 226, 0) 80%);
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
   box-shadow: 0 0 20px rgba(138, 43, 226, 0.1);
-  z-index: 1000; 
+  z-index: 1; 
+}
+.main-container {
+  position: relative; 
+  z-index: 3; 
+}
+
+.aboutme,
+.blog,
+.certifications,
+.contact,
+.hero,
+.home,
+.loading-screen,
+.portfolio,
+.timeline,
+.vertical-carousel,
+.header,
+.footer {
+  position: relative; 
+  z-index: 2; 
+}
+
+.header, .footer {
+  z-index: 3; 
+}
+
+.hero, .home, .portfolio {
+  z-index: 3;
 }

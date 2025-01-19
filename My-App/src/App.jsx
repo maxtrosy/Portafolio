@@ -18,11 +18,13 @@ function App() {
     circle.className = "cursor-circle";
     document.body.appendChild(circle);
 
+  
+
     let targetX = 0;
     let targetY = 0;
     let currentX = 0;
     let currentY = 0;
-    const speed = 0.03; 
+    const speed = 0.03;
 
     const updateCirclePosition = () => {
       const distX = targetX - currentX;
@@ -71,17 +73,19 @@ function App() {
   return (
     <Router>
       <div style={appStyle}>
-        <Header />
-        <ShowHero />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<div>404 Not Found</div>} />
-        </Routes>
-        <Footer />
+        <div className="main-container">
+          <Header />
+          <ShowHero />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
     </Router>
   );
