@@ -65,9 +65,9 @@
     opacity: 1;
   }
   
-  /* Las imágenes a los lados se ven más pequeñas */
+  /* The image on the side look smaller */
   .carousel-item.side {
-    transform: scale(1); /* Hago que las imágenes de los lados se vean más pequeñas */
+    transform: scale(1); 
     opacity: 0.8;
   }
   

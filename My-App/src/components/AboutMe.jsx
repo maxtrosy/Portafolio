@@ -9,38 +9,6 @@ import { FaGraduationCap, FaBuilding, FaUniversity, FaChalkboardTeacher, FaFlagC
 
 const AboutMe = () => {
   const [activeSection, setActiveSection] = useState('tech-stack'); 
-  const timelineData = [
-    {
-      year: '2010',
-      description: 'High School',
-      icon: <FaGraduationCap size={40} color="#fff" />,
-      achievements: ['Math Olympiad Winner', 'Debate Team Captain'],
-    },
-    {
-      year: '2012',
-      description: 'Graduation',
-      icon: <FaBuilding size={40} color="#fff" />,
-      achievements: ['Graduated with Honors', 'Valedictorian'],
-    },
-    {
-      year: '2014',
-      description: 'College',
-      icon: <FaUniversity size={40} color="#fff" />,
-      achievements: ['Dean’s List', 'Internship at TechCorp'],
-    },
-    {
-      year: '2016',
-      description: 'Master Degree',
-      icon: <FaChalkboardTeacher size={40} color="#fff" />,
-      achievements: ['Research Paper Published', 'Teaching Assistant'],
-    },
-    {
-      year: '2020',
-      description: 'PhD',
-      icon: <FaFlagCheckered size={40} color="#fff" />,
-      achievements: ['Doctoral Thesis Award', 'Keynote Speaker at Conference'],
-    },
-  ];
 
   return (
     <div className="about-me-container">

@@ -3,41 +3,23 @@ import './Timeline.css';
 
 const timelineData = [
   {
-    date: "1985",
-    title: "Kindergarten",
-    description: "Kindergarten (1985-1986)",
+    date: "2018",
+    title: "Sugar Group Junior High School",
+    description: "j",
     icon: "🏫"
   },
   {
-    date: "1986",
-    title: "Elementary",
-    description: "Elementary (1986-1991)",
+    date: "2021",
+    title: "Kibang 1 Senior High School",
+    description: "Ele",
     icon: "⏰"
   },
   {
-    date: "1991",
-    title: "Middle School",
-    description: "Middle School (1991-1994)",
-    icon: "⏰"
-  },
-  {
-    date: "1994",
-    title: "High School",
-    description: "High School (1994-1997)",
-    icon: "🎓"
-  },
-  {
-    date: "1997",
-    title: "University",
-    description: "University (1997-2001)",
+    date: "2024",
+    title: "IPB University",
+    description: "Best Action Project Salam Al-Hurriyyah 2024",
     icon: "📖"
   },
-  {
-    date: "2001",
-    title: "Postgraduate",
-    description: "Postgraduate (2001-2003)",
-    icon: "🎓"
-  }
 ];
 
 const Timeline = () => {

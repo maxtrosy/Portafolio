@@ -34,7 +34,7 @@ header.scrolled {
   animation: fadeInUp 1.5s ease-out; 
 }
 
-/* Icono de la hamburguesa */
+/* Hamburger Icon */
 .hamburger-icon {
   display: flex;
   flex-direction: column;
