@@ -30,7 +30,7 @@ const timelineData = [
     date: "2024",
     title: "IPB University",
     description: [
-      { text: "Best Action Project Salam Al-Hurriyyah 2024", link: "https://drive.google.com/file/d/1mJvyF58NFiY25KYCxh5t9yqyiy3FtEuV/view?usp=drive_link" },
+      { text: "Best 'Hope in Action' Project Salam Al-Hurriyyah 2024", link: "https://drive.google.com/file/d/1mJvyF58NFiY25KYCxh5t9yqyiy3FtEuV/view?usp=drive_link" },
     ],
     icon: "📖",
   },
